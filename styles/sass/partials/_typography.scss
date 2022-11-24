@@ -1,0 +1,56 @@
+@use "./variables" as var;
+
+html {
+    font-size: 125%;
+}
+
+body,
+ul,
+h1,
+h2,
+h3,
+form,
+button,
+p  {
+    margin: 0 auto;
+    padding: 0;
+    font-family: var.$body;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #2A3033;
+}
+
+h1, h2, h3  {
+    font-family: var.$header;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+ul {
+    list-style: none;
+    a {
+        text-decoration: none;
+    }    
+}    
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}    
+
+.wrapper {
+    max-width: 1050px;
+    margin: 0 auto;
+}    
+
