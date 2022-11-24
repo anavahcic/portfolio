@@ -1,1 +1,36 @@
 @use "./variables";
+
+// Header section styles
+header {
+    height: 100vh;
+    background-size: cover;
+}
+
+.topNav {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    height: 10vh;
+}
+
+.headerTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+// About section styles
+.aboutFlexContainer {
+    display: flex;
+}
+
+// Skills section styles
+// Projects section styles
+// Contact section styles
+// Footer section styles
+footer {
+    height: 40px;
+    background-color:#3D48AE;
+    text-align: left;
+}
