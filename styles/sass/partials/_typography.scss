@@ -25,15 +25,15 @@ p  {
 h1, h2, h3  {
     font-family: var.$header;
     font-weight: 700;
-    font-size: 1.6rem;
+    font-size: 3rem;
 }
 
 h2 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 }
 
 h3 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 ul {
@@ -41,6 +41,9 @@ ul {
     a {
         text-decoration: none;
     }    
+    a:hover, .getInTouch:focus {
+        background-color: palevioletred;
+    }
 }    
 
 img {
@@ -50,7 +53,20 @@ img {
 }    
 
 .wrapper {
-    max-width: 1050px;
+    width: 90%;
     margin: 0 auto;
+    max-width: 1200px; 
 }    
+
+.getInTouch {
+    background-color: #FBAF01;
+    padding: 5px 20px;
+}
+.projectsLinks {
+    li {
+    background-color: #FBAF01;
+    padding: 5px 15px;
+    margin: 0px 10px;
+    }
+}
 

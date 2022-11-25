@@ -2,8 +2,9 @@
 
 // Header section styles
 header {
-    height: 100vh;
+    height: 80vh;
     background-size: cover;
+    background-color: #818CEF;
 }
 
 .topNav {
@@ -15,13 +16,18 @@ header {
     li {
         margin: 0px 10px;;
     }
+   
 }
 
 .headerTextContainer {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    h1, p {
+        margin: 10px;
+        padding: 5px;
+
+    }
+
 }
 
 // About section styles
@@ -32,7 +38,7 @@ header {
     display: flex;
 }
 .headshotImgContainer {
-    width: 80%;
+    width: 40%;
     max-width: 230px;
     padding-top: 40px;
 }
@@ -43,7 +49,6 @@ header {
     h2 {
         margin-bottom: 10px;
         font-family: 'Nunito', sans-serif;
-        font-size: 1.2rem;
     }
     p {
         font-family: 'PT Sans', sans-serif; 
@@ -56,26 +61,53 @@ header {
 }
 .skillsContainer {
     display: flex;
-}
-.individualSkill {
-    display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    .individualSkill {
+        padding: 20px;
+        margin: 100px;
+    }
 }
+
 // Projects section styles
+.projects {
+    h2 {
+        padding: 20px;
+    }
+}
 .projectsFlexContainer {
     display: flex;
+    flex-wrap: wrap;
 }
 .projectsImgContainer {
-   width: 40%;
+   width: 30%;
+   padding: 20px;
 }
 .projectsTextContainer {
-    width: 60%;
+    width: 70%;
+    padding: 20px 0px 0px 20px;
+    text-align: left;
+    h3 {
+       margin-bottom: 10px;
+    }
     .skillsUsed,
     .projectsLinks {
         display: flex;
+    }
+    .skillsUsed {
+        li {
+            color: #818CEF;
+            font-size: 0.8rem;
+            margin: 0px 5px 0px 0px;
+        }
+    }
+    .projectsLinks {
+        li {
+            margin: 20px;
+            padding: 10px;
+            margin-left: 0;
+        }
     }
 }
 // Contact section styles
@@ -85,10 +117,46 @@ header {
 .contactFlexContainer,
 .contactInfo {
     display: flex;
+    padding: 100px 50px;
+}
+
+.contactTextContainer {
+    width: 40%;
+    text-align: left;
+    margin-right: 200px;
+    h2 {
+        margin-bottom: 20px;
+    }
+}
+.contactInfo {
+    li {
+        padding: 10px;
+        text-align: left;
+    }
+}
+// Form styles
+label {
+    text-transform: uppercase;
+}
+input,
+textarea {
+    width: 90%;
+    border: 1px solid white;
+}
+
+.submitBtn {
+    background-color: #FBAF0A;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 // Footer section styles
 footer {
     height: 40px;
     background-color:#3D48AE;
+    padding-top: 5px;
     text-align: left;
 }

@@ -251,15 +251,15 @@ p {
 h1, h2, h3 {
   font-family: "Nunito", sans-serif;
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 ul {
@@ -267,6 +267,9 @@ ul {
 }
 ul a {
   text-decoration: none;
+}
+ul a:hover, ul .getInTouch:focus {
+  background-color: palevioletred;
 }
 
 img {
@@ -276,13 +279,26 @@ img {
 }
 
 .wrapper {
-  max-width: 1050px;
+  width: 90%;
   margin: 0 auto;
+  max-width: 1200px;
+}
+
+.getInTouch {
+  background-color: #FBAF01;
+  padding: 5px 20px;
+}
+
+.projectsLinks li {
+  background-color: #FBAF01;
+  padding: 5px 15px;
+  margin: 0px 10px;
 }
 
 header {
-  height: 100vh;
+  height: 80vh;
   background-size: cover;
+  background-color: #818CEF;
 }
 
 .topNav {
@@ -309,12 +325,10 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+}
+.headerTextContainer h1, .headerTextContainer p {
+  margin: 10px;
+  padding: 5px;
 }
 
 .about {
@@ -328,7 +342,7 @@ header {
 }
 
 .headshotImgContainer {
-  width: 80%;
+  width: 40%;
   max-width: 230px;
   padding-top: 40px;
 }
@@ -341,7 +355,6 @@ header {
 .aboutMeBio h2 {
   margin-bottom: 10px;
   font-family: "Nunito", sans-serif;
-  font-size: 1.2rem;
 }
 .aboutMeBio p {
   font-family: "PT Sans", sans-serif;
@@ -355,18 +368,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.individualSkill {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -374,25 +377,51 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
+.skillsContainer .individualSkill {
+  padding: 20px;
+  margin: 100px;
+}
+
+.projects h2 {
+  padding: 20px;
+}
 
 .projectsFlexContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .projectsImgContainer {
-  width: 40%;
+  width: 30%;
+  padding: 20px;
 }
 
 .projectsTextContainer {
-  width: 60%;
+  width: 70%;
+  padding: 20px 0px 0px 20px;
+  text-align: left;
+}
+.projectsTextContainer h3 {
+  margin-bottom: 10px;
 }
 .projectsTextContainer .skillsUsed,
 .projectsTextContainer .projectsLinks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.projectsTextContainer .skillsUsed li {
+  color: #818CEF;
+  font-size: 0.8rem;
+  margin: 0px 5px 0px 0px;
+}
+.projectsTextContainer .projectsLinks li {
+  margin: 20px;
+  padding: 10px;
+  margin-left: 0;
 }
 
 .contact {
@@ -404,10 +433,46 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 100px 50px;
+}
+
+.contactTextContainer {
+  width: 40%;
+  text-align: left;
+  margin-right: 200px;
+}
+.contactTextContainer h2 {
+  margin-bottom: 20px;
+}
+
+.contactInfo li {
+  padding: 10px;
+  text-align: left;
+}
+
+label {
+  text-transform: uppercase;
+}
+
+input,
+textarea {
+  width: 90%;
+  border: 1px solid white;
+}
+
+.submitBtn {
+  background-color: #FBAF0A;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 footer {
   height: 40px;
   background-color: #3D48AE;
+  padding-top: 5px;
   text-align: left;
 }
