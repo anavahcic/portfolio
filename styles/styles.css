@@ -241,7 +241,7 @@ p {
   margin: 0 auto;
   padding: 0;
   font-family: "PT Sans", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;
   letter-spacing: 1px;
   line-height: 25px;
@@ -295,6 +295,10 @@ header {
   -ms-flex-line-pack: center;
       align-content: center;
   height: 10vh;
+  padding: 20px;
+}
+.topNav li {
+  margin: 0px 10px;
 }
 
 .headerTextContainer {
@@ -308,12 +312,95 @@ header {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.about {
+  background-color: #E7E8EE;
+}
+
+.aboutFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.headshotImgContainer {
+  width: 80%;
+  max-width: 230px;
+  padding-top: 40px;
+}
+
+.aboutMeBio {
+  width: 60%;
+  padding: 40px 50px;
+  margin-left: 20px;
+}
+.aboutMeBio h2 {
+  margin-bottom: 10px;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+}
+.aboutMeBio p {
+  font-family: "PT Sans", sans-serif;
+}
+
+.skills {
+  background-color: #3D48AE;
+}
+
+.skillsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.individualSkill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.aboutFlexContainer {
+.projectsFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projectsImgContainer {
+  width: 40%;
+}
+
+.projectsTextContainer {
+  width: 60%;
+}
+.projectsTextContainer .skillsUsed,
+.projectsTextContainer .projectsLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact {
+  background-color: #DFE0FC;
+}
+
+.contactFlexContainer,
+.contactInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

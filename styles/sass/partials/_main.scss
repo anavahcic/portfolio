@@ -11,23 +11,81 @@ header {
     justify-content: flex-end;
     align-content: center;
     height: 10vh;
+    padding: 20px;
+    li {
+        margin: 0px 10px;;
+    }
 }
 
 .headerTextContainer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
 }
 
 // About section styles
+.about {
+    background-color: #E7E8EE;
+}
 .aboutFlexContainer {
     display: flex;
 }
+.headshotImgContainer {
+    width: 80%;
+    max-width: 230px;
+    padding-top: 40px;
+}
+.aboutMeBio {
+    width: 60%;
+    padding: 40px 50px;
+    margin-left: 20px;
+    h2 {
+        margin-bottom: 10px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.2rem;
+    }
+    p {
+        font-family: 'PT Sans', sans-serif; 
+    }
+}
 
 // Skills section styles
+.skills {
+    background-color: #3D48AE;
+}
+.skillsContainer {
+    display: flex;
+}
+.individualSkill {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 // Projects section styles
+.projectsFlexContainer {
+    display: flex;
+}
+.projectsImgContainer {
+   width: 40%;
+}
+.projectsTextContainer {
+    width: 60%;
+    .skillsUsed,
+    .projectsLinks {
+        display: flex;
+    }
+}
 // Contact section styles
+.contact {
+    background-color: #DFE0FC;
+}
+.contactFlexContainer,
+.contactInfo {
+    display: flex;
+}
 // Footer section styles
 footer {
     height: 40px;
