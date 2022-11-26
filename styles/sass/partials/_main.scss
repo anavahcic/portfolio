@@ -5,8 +5,11 @@ header {
     height: 80vh;
     background-size: cover;
     background-color: #818CEF;
+    // background-image: url(../assets/142.png);
+    // background-repeat: no-repeat;
+   
 }
-
+// Navigations styles
 .topNav {
     display: flex;
     justify-content: flex-end;
@@ -33,6 +36,7 @@ header {
     }
     }
 
+// h1 styles
 .headerTextContainer {
     display: flex;
     flex-direction: column;
@@ -158,7 +162,6 @@ header {
 .contactTextContainer {
     width: 40%;
     text-align: left;
-    margin-right: 200px;
     h2 {
         margin-bottom: 20px;
     }
@@ -170,12 +173,19 @@ header {
     }
 }
 // Form styles
+label,
+input {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px;
+}
 label {
     text-transform: uppercase;
 }
+
 input,
 textarea {
-    width: 90%;
+    width: 100%;
     border: 1px solid white;
 }
 
