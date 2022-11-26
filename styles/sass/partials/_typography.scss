@@ -41,9 +41,6 @@ ul {
     a {
         text-decoration: none;
     }    
-    a:hover, .getInTouch:focus {
-        background-color: palevioletred;
-    }
 }    
 
 img {
@@ -58,15 +55,4 @@ img {
     max-width: 1200px; 
 }    
 
-.getInTouch {
-    background-color: #FBAF01;
-    padding: 5px 20px;
-}
-.projectsLinks {
-    li {
-    background-color: #FBAF01;
-    padding: 5px 15px;
-    margin: 0px 10px;
-    }
-}
 
