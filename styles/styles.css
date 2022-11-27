@@ -251,11 +251,11 @@ p {
 h1, h2, h3 {
   font-family: "Nunito", sans-serif;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 3.8rem;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 h3 {
@@ -472,11 +472,27 @@ header .headerTextContainer h1, header .headerTextContainer p {
 }
 .contactTextContainer h2 {
   margin-bottom: 20px;
+  font-size: 2.6rem;
 }
 
+.contactInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
 .contactInfo li {
   padding: 10px;
-  text-align: left;
+  margin-right: 20px;
+}
+.contactInfo li a {
+  -webkit-transition: color 0.7s;
+  transition: color 0.7s;
+}
+.contactInfo li ahover {
+  color: yellowgreen;
 }
 
 label,
