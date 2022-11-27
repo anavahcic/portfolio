@@ -284,7 +284,8 @@ img {
 header {
   height: 80vh;
   background-size: cover;
-  background-color: #818CEF;
+  background-image: url(../assets/142.png);
+  background-repeat: no-repeat;
 }
 
 .topNav {
@@ -509,6 +510,9 @@ textarea {
 footer {
   height: 40px;
   background-color: #3D48AE;
-  padding-top: 5px;
+}
+footer p {
   text-align: left;
+  padding-top: 5px;
+  color: white;
 }
