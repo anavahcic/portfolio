@@ -1,4 +1,4 @@
-@use "./variables";
+@use "./variables" as var;
 
 // About section styles
 .about {
@@ -23,18 +23,20 @@
     margin-left: 20px;
     h2 {
         margin-bottom: 10px;
-        font-family: 'Nunito', sans-serif;
+        font-family: var.$header;
     }
     p {
-        font-family: 'PT Sans', sans-serif; 
+        font-family: var.$body;
     }
 }
 
 // Skills section styles
 .skills {
     background-color: #3D48AE;
+    color: white;
     h2 {
-        padding: 20px;
+        padding: 40px;
+        color: white;
     }
 }
 .skillsContainer {
@@ -45,17 +47,19 @@
 .individualSkill {
     margin: 8px;
     padding: 5px;
-    border: 1px solid black;
     flex: 0 0 150px;
     display: flex;
     flex-direction: column;
     span,
     i {
-        margin: 0;
-        padding: 5px;
+        margin: 20;
+        padding: 20px;
         flex-grow: 1;
+    } 
+    span {
+        font-size: 0.6rem;
     }
-    
+
 }
 
 // Projects section styles

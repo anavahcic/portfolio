@@ -286,9 +286,26 @@ header {
   background-size: cover;
   background-image: url(../assets/142.png);
   background-repeat: no-repeat;
+  background-position: right;
+  position: relative;
+}
+header .headerTextContainer {
+  text-align: left;
+  position: absolute;
+  bottom: 50%;
+  z-index: 10;
+}
+header .headerTextContainer h1, header .headerTextContainer p {
+  margin: 10px;
+  padding: 5px;
 }
 
 .topNav {
+  height: 10vh;
+  padding: 20px;
+  z-index: 10;
+}
+.topNav .desktopNav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,38 +316,21 @@ header {
       flex-wrap: wrap;
   -ms-flex-line-pack: center;
       align-content: center;
-  height: 10vh;
-  padding: 20px;
 }
-.topNav li {
+.topNav .desktopNav li {
   margin: 0px 10px;
-  border-radius: 5px;
   cursor: pointer;
+  border-bottom: 3px solid rgba(251, 175, 1, 0);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
-.topNav li a {
-  display: inline-block;
+.topNav .desktopNav li:hover, .topNav .desktopNav li:focus {
+  border-bottom: 3px solid #fbaf01;
 }
-.topNav li a:hover .topNav li a:focus {
-  background: #E7E8EE;
-  border-radius: 1px solid pink;
-}
-.topNav .getInTouch {
+.topNav .desktopNav li:last-child {
   background-color: #FBAF01;
   padding: 5px 20px;
-}
-
-.headerTextContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.headerTextContainer h1, .headerTextContainer p {
-  margin: 10px;
-  padding: 5px;
+  border-radius: 5px;
 }
 
 .about {
@@ -368,9 +368,11 @@ header {
 
 .skills {
   background-color: #3D48AE;
+  color: white;
 }
 .skills h2 {
-  padding: 20px;
+  padding: 40px;
+  color: white;
 }
 
 .skillsContainer {
@@ -384,7 +386,6 @@ header {
 .individualSkill {
   margin: 8px;
   padding: 5px;
-  border: 1px solid black;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 150px;
           flex: 0 0 150px;
@@ -398,11 +399,14 @@ header {
 }
 .individualSkill span,
 .individualSkill i {
-  margin: 0;
-  padding: 5px;
+  margin: 20;
+  padding: 20px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+.individualSkill span {
+  font-size: 0.6rem;
 }
 
 .projects h2 {
@@ -512,7 +516,8 @@ footer {
   background-color: #3D48AE;
 }
 footer p {
-  text-align: left;
-  padding-top: 5px;
+  text-align: center;
+  padding-top: 10px;
   color: white;
+  font-size: 0.8rem;
 }
