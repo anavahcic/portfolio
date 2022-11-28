@@ -287,8 +287,8 @@ img {
 
 header {
   height: 80vh;
+  background: linear-gradient(135deg, #818CEF 40%, #fbcfbc);
   background-size: cover;
-  background-image: url(../assets/142.png);
   background-repeat: no-repeat;
   background-position: right;
   position: relative;
@@ -338,7 +338,7 @@ header .headerTextContainer h1, header .headerTextContainer p {
 }
 
 .about {
-  background-color: #E7E8EE;
+  background-color: #fbfbfc;
 }
 
 .aboutFlexContainer {
@@ -372,11 +372,11 @@ header .headerTextContainer h1, header .headerTextContainer p {
 
 .skills {
   background-color: #3D48AE;
-  color: white;
+  color: #fbfbfc;
 }
 .skills h2 {
   padding: 40px;
-  color: white;
+  color: #fbfbfc;
 }
 
 .skillsContainer {
@@ -488,12 +488,11 @@ header .headerTextContainer h1, header .headerTextContainer p {
           justify-content: flex-start;
 }
 .contactInfo li {
-  padding: 5px;
-  margin-right: 70px;
+  padding: 15px;
 }
 .contactInfo li a {
-  -webkit-transition: color 0.7s;
-  transition: color 0.7s;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
 }
 .contactInfo li a:hover {
   color: #FBAF01;
