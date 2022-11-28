@@ -1,0 +1,108 @@
+@use "./variables";
+
+// Media Queries Styles
+@media (max-width: 800px) {
+    // Desktop Navigation
+    .topNav {
+        display: none;
+    }
+    // Mobile Navigation
+    .mobileNav {
+        display: block;
+    }
+   .aboutFlexContainer {
+    flex-direction: column;
+    align-items: center;
+    .headshotImgContainer {
+        width: 100%;
+    }
+   }
+   .contactTextContainer {
+    margin-right: 50px;
+   }
+   .submitBtn {
+    margin-bottom: 5px;
+   }
+}
+
+@media (max-width: 650px) {
+    // Desktop Navigation
+    .topNav {
+        display: none;
+    }
+    // Mobile Navigation
+    .mobileNav {
+        display: block;
+    }
+   .aboutFlexContainer {
+    flex-direction: column;
+    align-items: center;
+    .headshotImgContainer {
+        width: 100%;
+    }
+   }
+   .projectsFlexContainer {
+    flex-direction: column;
+    align-items: center;
+    .projectsImgContainer {
+        width: 70%;
+    }
+   }
+   .contactTextContainer {
+    margin-right: 50px;
+   }
+   .submitBtn {
+    margin-bottom: 5px;
+   }
+}
+
+@media (max-width: 500px) {
+    // Desktop Navigation
+    .topNav {
+        display: none;
+    }
+    // Mobile Navigation
+    .mobileNav {
+        display: block;
+    }
+   .aboutFlexContainer {
+    flex-direction: column;
+    align-items: center;
+    .headshotImgContainer {
+        width: 100%;
+    }
+    .aboutMeBio {
+        width: fit-content;
+        align-items:center;
+        p {
+            font-size: 0.9rem;
+        }
+    }
+   }
+   .projectsFlexContainer {
+    flex-direction: column;
+    align-items: center;
+    .projectsImgContainer {
+        width: 70%;
+    }
+   }
+   .contactTextContainer {
+    margin-right: 50px;
+    h2 {
+        font-size: 1.8rem;
+    }
+    p  {
+        font-size: 0.8rem;
+    }
+    }
+    ul {
+       flex-direction: column;
+       a {
+           font-size: 0.6rem;
+           
+       }
+    }
+   .submitBtn {
+    font-size: 0.8rem;
+   }
+}

@@ -22,6 +22,7 @@ header {
 }
 
 // Navigations styles
+// Desktop Navigation
 .topNav {
     height: 10vh;
     padding: 20px;
@@ -48,4 +49,67 @@ header {
         }
     }
 }
+
+// Mobile Navigation
+.mobileNav {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+    i {
+        text-shadow: 1px 1px #FBAF01;
+        font-size: 2rem;
+    }
+    input[type=checkbox] {
+        position: absolute;
+        opacity: 0;
+    }
+}
+.mobileMenuBtn {
+    cursor: pointer;
+}
+.slideOutNav {
+    background-color: #818CEF;
+    position: fixed;
+    top: -500px;
+    left: 0;
+    width: 100vw;
+    height: 80vh;
+    max-height: 400px;
+    padding: 50px 0;
+    z-index: 10;
+    transition: 0.7s;
+    .wrapperMobileNav {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    a,
+    .closeMenu {
+        color: #818CEF;
+        border: 2px solid #FBAF01;
+        padding: 5px 25px;
+        &:hover,
+        &:focus {
+            color: #fbcfbc;
+            border: 2px solid #818CEF;
+        }
+    }
+    li {
+        text-align: center;
+        margin-bottom: 20px;
+        &:last-child {
+            background-color: #FBAF01;
+            padding: 5px 20px;
+            border-radius: 5px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+
 
