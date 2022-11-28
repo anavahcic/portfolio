@@ -267,6 +267,10 @@ ul {
 }
 ul a {
   text-decoration: none;
+  color: #2A3033;
+}
+ul a:visited, ul a:active {
+  color: inherit;
 }
 
 img {
@@ -484,15 +488,15 @@ header .headerTextContainer h1, header .headerTextContainer p {
           justify-content: flex-start;
 }
 .contactInfo li {
-  padding: 10px;
-  margin-right: 20px;
+  padding: 5px;
+  margin-right: 70px;
 }
 .contactInfo li a {
   -webkit-transition: color 0.7s;
   transition: color 0.7s;
 }
-.contactInfo li ahover {
-  color: yellowgreen;
+.contactInfo li a:hover {
+  color: #FBAF01;
 }
 
 label,
