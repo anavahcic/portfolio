@@ -40,6 +40,13 @@
     .headshotImgContainer {
         width: 100%;
     }
+    .aboutMeBio {
+        width: fit-content;
+        align-items:center;
+        p {
+            font-size: 0.9rem;
+        }
+    }
    }
    .projectsFlexContainer {
     flex-direction: column;
@@ -50,6 +57,13 @@
    }
    .contactTextContainer {
     margin-right: 50px;
+    // width: fit-content;
+    p {
+        font-size: 0.9rem;
+    }
+    a {
+        font-size: small;
+    }
    }
    .submitBtn {
     margin-bottom: 5px;
