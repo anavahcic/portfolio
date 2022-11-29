@@ -42,7 +42,7 @@
                         <li><a href="#home">home</a></li>
                         <li><a href="#about">about</a></li>
                         <li><a href="#projects">projects</a></li>
-                        <li class="getInTouch"><a href="#contact">get in <br>touch</br></a></li>   
+                        <li class="getInTouch"><a href="#contact">get in touch</a></li>   
                     </ul>  
             </nav><!-- END. mobileNav -->
         </div><!-- END .wrapper -->
@@ -198,7 +198,9 @@
             <div class="wrapper">
                 <div class="contactFlexContainer">
                     <div class="contactTextContainer">
-                        <h2>get in touch</h2>
+                        <h2>get in 
+                            <br>touch</br>
+                        </h2>
                         <p>If you'd like to connect or have questions, send me a message. I always like to chat about coding, scuba diving, sharks or just anything.</p>
                         <ul class="contactInfo">
                             <li>
@@ -219,12 +221,12 @@
                         </ul> 
                     </div><!-- END .contactTextContainer -->
                     
-                    <form name="message" method="post" action="">
+                    <form id="myForm" name="message" method="POST" action="https://formspree.io/f/xpzngzdv">
                         <label id="nameLabel" for="userName">Name</label>
-                        <input id="userName type="text" name="name" required="">
+                        <input id="userName" type="text" name="name" required="">
 
                         <label id="emailLabel for="userEmail">Email Address</label>
-                        <input id="userEmail" type="email" name="_replyto" required="">
+                        <input id="userEmail" type="email" name="email" required="">
 
                         <label id="messageLabel" for="userMessage">Message</label>
                         <textarea name="userMessage" id="userMessage" cols="30" rows="10" required=""></textarea>

@@ -553,13 +553,18 @@ header .headerTextContainer h1, header .headerTextContainer p {
 }
 
 .contactTextContainer {
-  width: 40%;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
   text-align: left;
   margin-right: 20px;
 }
 .contactTextContainer h2 {
   margin-bottom: 50px;
   font-size: 2.6rem;
+}
+.contactTextContainer br {
+  margin: 15px;
 }
 
 .contactInfo {
