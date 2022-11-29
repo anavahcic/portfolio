@@ -1,6 +1,12 @@
 @use "./variables";
 
 // Media Queries Styles
+@media (max-width:1110px) {
+    header {
+        background-image: none;
+        background: linear-gradient(80deg, #3D48AE, #fbfbfc);
+    }
+}
 @media (max-width: 800px) {
     // Desktop Navigation
     .topNav {
@@ -56,26 +62,24 @@
         border-bottom: 1px solid #444;
     }
     } 
-        
+    .aboutFlexContainer {
+     flex-direction: column;
+     align-items: center;
+     .headshotImgContainer {
+         width: 100%;
+     }
     }
-   .aboutFlexContainer {
-    flex-direction: column;
-    align-items: center;
-    .headshotImgContainer {
-        width: 100%;
+    .contactTextContainer {
+     margin-right: 50px;
     }
-   }
-   .contactTextContainer {
-    margin-right: 50px;
-   }
-   .submitBtn {
-    margin-bottom: 5px;
-   }
-   .menuButtonContainer {
-    display: flex;
-   }
- 
-
+    .submitBtn {
+     margin-bottom: 5px;
+    }
+    .menuButtonContainer {
+     display: flex;
+    }
+  
+}
 
 
 @media (max-width: 650px) {

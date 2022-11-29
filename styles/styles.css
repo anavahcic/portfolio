@@ -286,9 +286,8 @@ img {
 }
 
 header {
-  height: 80vh;
-  background: linear-gradient(135deg, #818CEF 40%, #fbcfbc);
-  background-size: cover;
+  height: 100vh;
+  background-image: url(../assets/108.png);
   background-repeat: no-repeat;
   background-position: right;
   position: relative;
@@ -339,6 +338,18 @@ header .headerTextContainer h1, header .headerTextContainer p {
 
 .mobileNav {
   display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+}
+.mobileNav i {
+  text-shadow: 1px 1px #FBAF01;
+  font-size: 2rem;
+}
+.mobileNav input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
 }
 
 .menu {
@@ -356,23 +367,6 @@ header .headerTextContainer h1, header .headerTextContainer p {
 .menu li {
   margin: 0 1rem;
   overflow: hidden;
-}
-
-.menuButtonContainer {
-  display: none;
-  height: 100%;
-  width: 30px;
-  cursor: pointer;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 #menuToggle {
@@ -422,58 +416,6 @@ header .headerTextContainer h1, header .headerTextContainer p {
   cursor: pointer;
 }
 
-.slideOutNav {
-  background-color: #818CEF;
-  position: fixed;
-  top: -500px;
-  left: 0;
-  width: 100vw;
-  height: 80vh;
-  max-height: 400px;
-  padding: 50px 0;
-  z-index: 10;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-}
-.slideOutNav .wrapperMobileNav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.slideOutNav a,
-.slideOutNav .closeMenu {
-  color: #818CEF;
-  border: 2px solid #FBAF01;
-  padding: 5px 25px;
-}
-.slideOutNav a:hover, .slideOutNav a:focus,
-.slideOutNav .closeMenu:hover,
-.slideOutNav .closeMenu:focus {
-  color: #fbcfbc;
-  border: 2px solid #818CEF;
-}
-.slideOutNav li {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.slideOutNav li:last-child {
-  background-color: #FBAF01;
-  padding: 5px 20px;
-  border-radius: 5px;
-  margin-bottom: 0;
-}
-
 .about {
   background-color: #fbfbfc;
 }
@@ -482,12 +424,15 @@ header .headerTextContainer h1, header .headerTextContainer p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .headshotImgContainer {
   width: 40%;
   max-width: 230px;
   padding-top: 40px;
+  margin-right: 40px;
 }
 .headshotImgContainer img {
   border-radius: 50%;
@@ -679,6 +624,12 @@ footer p {
   font-size: 0.8rem;
 }
 
+@media (max-width: 1110px) {
+  header {
+    background-image: none;
+    background: linear-gradient(80deg, #3D48AE, #fbfbfc);
+  }
+}
 @media (max-width: 800px) {
   .topNav {
     display: none;
@@ -754,34 +705,30 @@ footer p {
   #menuToggle ~ .menu li .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
+  .aboutFlexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutFlexContainer .headshotImgContainer {
+    width: 100%;
+  }
+  .contactTextContainer {
+    margin-right: 50px;
+  }
+  .submitBtn {
+    margin-bottom: 5px;
+  }
+  .menuButtonContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
-.aboutFlexContainer {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.aboutFlexContainer .headshotImgContainer {
-  width: 100%;
-}
-
-.contactTextContainer {
-  margin-right: 50px;
-}
-
-.submitBtn {
-  margin-bottom: 5px;
-}
-
-.menuButtonContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 @media (max-width: 650px) {
   .topNav {
     display: none;
