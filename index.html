@@ -222,8 +222,9 @@
                     </div><!-- END .contactTextContainer -->
                     
                     <form 
-                    id="myForm" name="message" method="POST" data-netlify="true" onSubmit="submit"
+                    id="myForm" name="message" method="POST" data-netlify="true" onSubmit="submit" data-netlify-honeypot="bot-field"
                     >
+                    <input class="d-none" name="bot-field">
                         <label id="nameLabel" for="userName">Name</label>
                         <input id="userName" type="text" name="name" required="">
 
