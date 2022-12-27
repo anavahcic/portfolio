@@ -539,6 +539,12 @@ header .headerTextContainer h1, header .headerTextContainer p {
   border-radius: 5px;
   cursor: pointer;
 }
+.projectsTextContainer a {
+  color: blue;
+}
+.projectsTextContainer a:hover {
+  color: #FBAF01;
+}
 
 .contact {
   background-color: #DFE0FC;
