@@ -221,7 +221,9 @@
                         </ul> 
                     </div><!-- END .contactTextContainer -->
                     
-                    <form id="myForm" name="message" method="POST" action="https://formspree.io/f/xpzngzdv">
+                    <form 
+                    id="myForm" name="message" method="POST" data-netlify="true" onSubmit="submit"
+                    >
                         <label id="nameLabel" for="userName">Name</label>
                         <input id="userName" type="text" name="name" required="">
 
