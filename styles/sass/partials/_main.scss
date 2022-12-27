@@ -106,6 +106,13 @@
             cursor: pointer;
         }
     }
+    a {
+        color: blue;
+        &:hover {
+            color: #818CEF;
+        }
+    }
+    
 }
 // Contact section styles
 .contact {
@@ -138,7 +145,7 @@
         a {
         transition: color 0.5s;
         &:hover {
-             color: #FBAF01 ;
+             color: #FBAF01;
             }
         }
     }
