@@ -1,0 +1,134 @@
+@use "./variables" as var;
+
+.logo { 
+    animation: bounceIn 0.8s;
+    transform: rotate(0deg) scale(1) translateZ(0);
+    transition: all 0.4s cubic-bezier(.8,1.8,.75,.75);
+    a {
+        transition: 0.7s;
+        &:hover {
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        }
+    }
+    
+    @keyframes bounceIn {
+        0% {
+            opacity: 1;
+            transform: scale(.3);
+        } 
+        50% {
+            opacity: 1;
+            transform: scale(1.05);
+        } 
+
+        70% {
+            opacity: 1;
+            transform: scale(.9);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}
+
+.headerNav {
+    background-color: #DFE0FC;
+    padding: 10px 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.mainNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .mainNavLinks {
+        display: flex;
+        justify-content:space-between;
+        li {
+            margin-left: 50px;
+        }
+        a {
+            padding: 20px 35px;
+            text-align: center;
+            border-radius: 0.25em;
+            border: 2px solid transparent;
+            &:hover {
+                border: 2px solid black;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// Hamburger Nav
+
+.hamNavIcon {
+    display: none;
+    position: fixed;
+    // right: 15px;
+    // top: 15px;
+    right: 0;
+    top: 0;
+    padding: 2%;
+    cursor: pointer;
+    z-index: 100;
+    font-size: 2rem;
+
+    .toggle {
+        display: flex;
+        justify-content: center;
+        transition: 0.3s;
+        &:hover {
+            color: darkBlue;
+        }
+        &:focus {
+            color: darkBlue;
+        }
+    }
+}
+
+.hamNav {
+    display: none;
+    justify-content: right;
+    background-color: white;
+    height: 100vh;
+    width: 80vw;
+    position: fixed;
+    top: 0;
+    right: -80vw; 
+    z-index: 10;
+    transition: 0.5s;
+    // overflow: hidden;
+    ul {
+        flex-direction: column;
+        padding-top: 50px;
+        li {
+            justify-content: center;
+            margin-bottom: 10px;
+            a {
+                font-size: 2.8rem;
+                line-height: 85px;
+                transition: 0.4s;
+                color: black;
+                &:hover {
+                    color: darkBlue;
+                    font-weight: bold;
+                }
+                 &:focus {
+                    color: darkBlue;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+     &.openNav {
+        height: 100%; 
+        transform: translateX(-80vw);
+    }
+}

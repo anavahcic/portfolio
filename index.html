@@ -14,26 +14,78 @@
     <title>Ana Vahcic</title>
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
+    <!-- Navigation Bar -->
+    <nav class="headerNav">
         <div class="wrapper">
+            <!-- Main/Desktop Navigation -->
+            <div class="mainNav">
+                <div class="logo">
+                    <a href="#header">AV</a>
+                </div><!-- END .logo -->
+                <ul class="mainNavLinks">
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a class="button" href="#contact" aria-label="go to contact section">get in touch</a></li>
+                </ul>
+            </div><!-- END .mainNav -->
+        </div>
+    </nav><!-- END .headerNav -->
+
+    <!-- Hamburger Nav -->
+    <nav class="hamNavIcon">
+        <div class="toggle">
+            <i class="fas fa-bars"></i>
+            <div class="sr-only">Mobile Navigation Toggle</div>
+        </div><!-- END .toggle -->
+    </nav><!-- END .hamNavIcon -->
+
+    <nav class="hamNav">
+        <ul class="hamNavLinks">
+            <li><a href="#about" class="hamLinks" aria-label="go to about me section">about</a></li>
+            <li><a href="#skills" class="hamLinks" aria-label="go to skills section">skills</a></li>
+            <li><a href="#projects" class="hamLinks" aria-label="go to projects section">projects</a></li>
+            <li><a href="#contact" class="hamLinks" aria-label="go to contact section">get in touch</a></li>
+        </ul>
+    </nav><!-- END .hamNav -->
+
+    <!-- Header Section -->
+    <header id="header" class="header">
+        <img src="./assets/darkMode.png" alt="dark/light icon" aria-hidden="true" id="icon">
+        <div class="wrapper">
+            <div class="textContainer">
+                <h1>ana vahcic</h1>
+                <h2 class="typeContainer">
+                    <span class="text firstText">i'm a</span>
+                    <span class="text secondText">front-end developer</span>
+                </h2>
+            </div><!-- END .textContainer -->
+        </div> <!-- END .wrapper -->
+    </header>
+
+    <!-- Header Section -->
+    <!-- <header>
+        <div class="wrapper"> -->
             <!-- Desktop NAV -->
-            <nav class="topNav">
+            <!-- <nav class="topNav">
                 <ul class="desktopNav">
                     <li><a href="#home">home</a></li>
                     <li><a href="#about">about</a></li>
                     <li><a href="#projects">projects</a></li>
-                    <li class="getInTouch"><a href="#contact">get in touch</a></li>
-                </ul><!-- END .desktopNav -->
-            </nav><!-- END .topNav -->
+                    <li class="getInTouch"><a href="#contact">get in touch</a></li> -->
+                <!-- </ul> -->
+                <!-- END .desktopNav -->
+            <!-- </nav> -->
+            <!-- END .topNav -->
 
-            <div class="headerTextContainer">
+            <!-- <div class="headerTextContainer">
                 <h1>ana vahcic</h1>
-                <p>front-end web developer</p>
-            </div><!-- END .headerTextContainer -->
+                <p>front-end web developer</p> -->
+            <!-- </div> -->
+            <!-- END .headerTextContainer -->
 
             <!-- Mobile NAV -->
-            <nav class="mobileNav">
+            <!-- <nav class="mobileNav">
                 <input id="menuToggle" type="checkbox">
                 <label class="menuButtonContainer" for="menuToggle">
                 <div class="menuButton"></div> 
@@ -43,10 +95,12 @@
                         <li><a href="#about">about</a></li>
                         <li><a href="#projects">projects</a></li>
                         <li class="getInTouch"><a href="#contact">get in touch</a></li>   
-                    </ul>  
-            </nav><!-- END. mobileNav -->
-        </div><!-- END .wrapper -->
-    </header>
+                    </ul>   -->
+            <!-- </nav> -->
+            <!-- END. mobileNav -->
+        <!-- </div> -->
+        <!-- END .wrapper -->
+    <!-- </header> -->
 
     <!-- Main Section -->
     <main>
