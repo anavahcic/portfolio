@@ -300,7 +300,7 @@ header .headerTextContainer {
 }
 header .headerTextContainer h1, header .headerTextContainer p {
   margin: 10px;
-  padding: 5px;
+  padding: 15px 0px;
 }
 
 .topNav {
@@ -455,6 +455,7 @@ header .headerTextContainer h1, header .headerTextContainer p {
 .skills {
   background-color: #3D48AE;
   color: #fbfbfc;
+  padding: 100px 0px;
 }
 .skills h2 {
   padding: 40px;
@@ -495,6 +496,9 @@ header .headerTextContainer h1, header .headerTextContainer p {
   font-size: 0.6rem;
 }
 
+.projects {
+  margin: 100px 0px;
+}
 .projects h2 {
   padding: 20px;
 }
