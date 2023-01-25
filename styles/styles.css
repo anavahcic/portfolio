@@ -285,75 +285,9 @@ img {
   max-width: 1200px;
 }
 
-.logo {
-  -webkit-animation: bounceIn 0.8s;
-          animation: bounceIn 0.8s;
-  -webkit-transform: rotate(0deg) scale(1) translateZ(0);
-          transform: rotate(0deg) scale(1) translateZ(0);
-  -webkit-transition: all 0.4s cubic-bezier(0.8, 1.8, 0.75, 0.75);
-  transition: all 0.4s cubic-bezier(0.8, 1.8, 0.75, 0.75);
-}
-.logo a {
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-}
-.logo a:hover {
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-@-webkit-keyframes bounceIn {
-  0% {
-    opacity: 1;
-    -webkit-transform: scale(0.3);
-            transform: scale(0.3);
-  }
-  50% {
-    opacity: 1;
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-  }
-  70% {
-    opacity: 1;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-@keyframes bounceIn {
-  0% {
-    opacity: 1;
-    -webkit-transform: scale(0.3);
-            transform: scale(0.3);
-  }
-  50% {
-    opacity: 1;
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-  }
-  70% {
-    opacity: 1;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
 .headerNav {
-  background-color: white;
-  padding: 10px 0px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
+  background-color: #DFE0FC;
+  padding: 40px 0px;
 }
 
 .mainNav {
@@ -366,6 +300,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  float: right;
 }
 .mainNav .mainNavLinks {
   display: -webkit-box;
@@ -379,7 +314,7 @@ img {
   margin-left: 50px;
 }
 .mainNav .mainNavLinks a {
-  padding: 20px 35px;
+  padding: 5px 10px;
   text-align: center;
   border-radius: 0.25em;
   border: 2px solid transparent;
@@ -387,6 +322,18 @@ img {
 .mainNav .mainNavLinks a:hover {
   border: 2px solid black;
   font-weight: bold;
+  letter-spacing: 5px;
+}
+.mainNav .mainNavLinks .contactBtn {
+  background-color: black;
+  color: white;
+}
+.mainNav .mainNavLinks .contactBtn:hover {
+  background: #DFE0FC;
+  color: black;
+  border: 2px solid black;
+  font-weight: bold;
+  letter-spacing: 5px;
 }
 
 .hamNavIcon {
@@ -465,11 +412,14 @@ img {
           transform: translateX(-80vw);
 }
 
+.hamNavIcon {
+  color: black;
+}
+
 header {
+  height: 80vh;
+  background-color: #DFE0FC;
   height: 100vh;
-  background-image: url(../assets/108.png);
-  background-repeat: no-repeat;
-  background-position: right;
   position: relative;
 }
 header .wrapper {
@@ -484,9 +434,18 @@ header .textContainer {
       flex-basis: 100%;
   margin: 90px 0;
   overflow: hidden;
+  text-align: left;
+  position: absolute;
+  bottom: 50%;
+  z-index: 10;
 }
 header .textContainer h1 {
-  margin: 30px 0px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+header .textContainer h2 {
+  padding-bottom: 10px;
 }
 
 .typeContainer .text {
@@ -499,7 +458,7 @@ header .textContainer h1 {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: white;
+  background-color: #DFE0FC;
   border-left: 2.5px solid black;
   -webkit-animation: animate 3s steps(12) infinite;
           animation: animate 3s steps(12) infinite;
@@ -570,12 +529,10 @@ header .textContainer h1 {
 }
 
 .skills {
-  background-color: #3D48AE;
-  color: #fbfbfc;
-}
-.skills h2 {
-  padding: 40px;
-  color: #fbfbfc;
+  background-color: #DFE0FC;
+  color: black h2;
+  color-padding: 40px;
+  color-color: black;
 }
 
 .skillsContainer {
@@ -743,7 +700,7 @@ textarea {
 
 footer {
   height: 40px;
-  background-color: #3D48AE;
+  background-color: black;
 }
 footer p {
   text-align: center;
@@ -754,8 +711,7 @@ footer p {
 
 @media (max-width: 1110px) {
   header {
-    background-image: none;
-    background: linear-gradient(80deg, #3D48AE, #fbfbfc);
+    background: #DFE0FC;
   }
 }
 @media (max-width: 800px) {
