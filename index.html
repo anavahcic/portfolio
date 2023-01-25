@@ -11,41 +11,56 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=PT+Sans:wght@700&display=swap" rel="stylesheet"> 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/323dbf2a01.js" crossorigin="anonymous"></script>
+
     <title>Ana Vahcic</title>
 </head>
+
 <body>
-    <!-- Header Section -->
-    <header>
+    <!-- Navigation Bar -->
+    <nav class="headerNav">
         <div class="wrapper">
-            <!-- Desktop NAV -->
-            <nav class="topNav">
-                <ul class="desktopNav">
+            <!-- Main/Desktop Navigation -->
+            <div class="mainNav">
+                <ul class="mainNavLinks">
+                    <li><a href="#header">home</a></li>
                     <li><a href="#about">about</a></li>
                     <li><a href="#skills">skills</a></li>
                     <li><a href="#projects">projects</a></li>
-                    <li class="getInTouch"><a href="#contact">get in touch</a></li>
-                </ul><!-- END .desktopNav -->
-            </nav><!-- END .topNav -->
+                    <li><a class="contactBtn" href="#contact" aria-label="go to contact section">get in touch</a></li>
+                </ul>
+            </div><!-- END .mainNav -->
+        </div>
+    </nav><!-- END .headerNav -->
 
-            <div class="headerTextContainer">
+    <!-- Hamburger Nav -->
+    <nav class="hamNavIcon">
+        <div class="toggle">
+            <i class="fa-solid fa-bars"></i>
+            <div class="sr-only">Mobile Navigation Toggle</div>
+        </div><!-- END .toggle -->
+    </nav><!-- END .hamNavIcon -->
+
+    <nav class="hamNav">
+        <ul class="hamNavLinks">
+            <li><a href="#about" class="hamLinks" aria-label="go to about me section">about</a></li>
+            <li><a href="#skills" class="hamLinks" aria-label="go to skills section">skills</a></li>
+            <li><a href="#projects" class="hamLinks" aria-label="go to projects section">projects</a></li>
+            <li><a href="#contact" class="hamLinks" aria-label="go to contact section">get in touch</a></li>
+        </ul>
+    </nav><!-- END .hamNav -->
+
+    <!-- Header Section -->
+    <header id="header" class="header">
+        <img src="./assets/darkMode.png" alt="dark/light icon" aria-hidden="true" id="icon">
+        <div class="wrapper">
+            <div class="textContainer">
                 <h1>ana vahcic</h1>
-                <p>front-end web developer</p>
-            </div><!-- END .headerTextContainer -->
-
-            <!-- Mobile NAV -->
-            <nav class="mobileNav">
-                <input id="menuToggle" type="checkbox">
-                <label class="menuButtonContainer" for="menuToggle">
-                <div class="menuButton"></div> 
-                </label>
-                    <ul class="menu">
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#skills">skills</a></li>
-                        <li><a href="#projects">projects</a></li>
-                        <li class="getInTouch"><a href="#contact">get in touch</a></li>   
-                    </ul>  
-            </nav><!-- END. mobileNav -->
-        </div><!-- END .wrapper -->
+                <h2 class="typeContainer">
+                    <span class="text firstText">i'm a front-end developer &</span>
+                    <span class="text secondText"></span>
+                </h2>
+            </div><!-- END .textContainer -->
+        </div> <!-- END .wrapper -->
     </header>
 
     <!-- Main Section -->
@@ -59,7 +74,7 @@
                     </div><!-- END .imgHeadshotContainer -->
                     <div class="aboutMeBio">
                         <h2>about me</h2>
-                        <p>My name is Ana and I'm a front-end web developer that loves bringing people's ideas to life by building accessible, clean and responsive websites.<br></br>Prior to transitioning into tech, I worked as R&D engineer in polyurethane industry in China, and as office manager in consulting industry in Toronto. I love scuba diving so that passion drove me to become PADI scuba instructor as well.<br></br>When not coding, you will find me trying out new plant-based recipes, scuba diving, traveling, hiking, watching dachshund and/or corgis funny videos or just chilling.</p>
+                        <p>My name is Ana and I'm a front-end web developer that loves bringing people's ideas to life by building accessible, clean and responsive websites.<br></br>Prior to transitioning into tech, I worked as R&D engineer in polyurethane industry in China, and as office manager in consulting industry in Toronto. I love scuba diving so that passion drove me to become PADI scuba instructor as well.<br></br>When not coding, you will find me trying out new plant-based dishes, scuba diving, traveling, hiking, watching dachshund or corgis funny videos.</p>
                     </div> <!-- END .aboutMeBio -->
                 </div> <!-- END .aboutFlexContainer -->
             </div><!-- END .wrapper -->
@@ -136,7 +151,7 @@
                 <h2>projects</h2>
                 <div class="projectsFlexContainer">
                     <div class="projectsImgContainer">
-                        <img src="./assets/roberto-h-qToVxSYXPYU-unsplash.jpg" alt="A white boat in the middle of the ocean">
+                        <img src="./assets/roberto-h-qToVxSYXPYU-unsplash.jpg" alt="">
                     </div><!-- END .projectsImgContainer -->
                     <div class="projectsTextContainer">
                         <h3>boat ride adventures</h3>
@@ -155,7 +170,7 @@
 
                 <div class="projectsFlexContainer">
                     <div class="projectsImgContainer">
-                        <img src="./assets/icons8-team-dhZtNlvNE8M-unsplash.jpg" alt="A clock in the middle of the photo with left background being pink and right side green."> 
+                        <img src="./assets/icons8-team-dhZtNlvNE8M-unsplash.jpg" alt=""> 
                     </div><!-- END .projectsImgContainer -->
                     <div class="projectsTextContainer">
                         <h3>trivia quiz</h3>
@@ -170,7 +185,7 @@
                         </ul> <!-- END .skillsUsed -->
                         <p>Test your trivia knowledge with this fun world trivia game. You can choose difficulty levels and number of questions. This was a pair programming project created in collaboration with <a href="https://www.cyan-code.com/" target="_blank">Yan Chen</a>.</p>
                         <ul class="projectsLinks">
-                            <li><a href="https://triviaquizproject.netlify.app/" target="_blank">view live</a></li>
+                            <li><a href="https://enchanting-queijadas-7e8a6b.netlify.app/" target="_blank">view live</a></li>
                             <li><a href="https://github.com/yc-yanchen/triviaQuiz" target="_blank">view code</a></li>
                         </ul> <!-- END .projectsLinks -->
                     </div><!-- END .projectsTextContainer -->
@@ -178,30 +193,7 @@
 
                 <div class="projectsFlexContainer">
                     <div class="projectsImgContainer">
-                        <img src="./assets/kenny-eliason-KYxXMTpTzek-unsplash.jpg" alt="A clock and a white background"> 
-                    </div><!-- END .projectsImgContainer -->
-                    <div class="projectsTextContainer">
-                        <h3>bored app</h3>
-                        <ul class="skillsUsed">
-                            <li>HTML |</li>
-                            <li>CSS |</li>
-                            <li>SASS |</li>
-                            <li>API |</li>
-                            <li>JavaScript |</li>
-                            <li>Firebase</li>
-                        </ul> <!-- END .skillsUsed -->
-                        <p>The bored app helps you find activites when you are bored. The user can choose a category and then shuffle between activites. The user can save their favourite activites to the list.</p>
-                        <ul class="projectsLinks">
-                            <li><a href="https://bored-app-main.netlify.app/" target="_blank">view live</a></li>
-                            <li><a href="https://github.com/anavahcic/boredApp" target="_blank">view code</a></li>
-                        </ul> <!-- END .projectsLinks -->
-                    </div><!-- END .projectsTextContainer -->
-                </div><!-- END .projectsFlexContainer -->
-
-
-                <div class="projectsFlexContainer">
-                    <div class="projectsImgContainer">
-                        <img src="./assets/tech-daily-PGuCnUzsRSM-unsplash.jpg" alt="A laptop with movie poster on the screen">
+                        <img src="./assets/tech-daily-PGuCnUzsRSM-unsplash.jpg" alt="">
                     </div><!-- END .projectsImgContainer -->
                     <div class="projectsTextContainer">
                         <h3>box office boffo</h3>
@@ -230,7 +222,7 @@
                         <h2>get in 
                             <br>touch</br>
                         </h2>
-                        <p>If you'd like to connect or have questions, send me a message. I always like to chat about coding, scuba diving or just anything.</p>
+                        <p>If you'd like to connect or have questions, send me a message. I always like to chat about coding, scuba diving, sharks or just anything.</p>
                         <ul class="contactInfo">
                             <li>
                                 <a href="https://www.linkedin.com/in/ana-vah%C4%8Di%C4%8D-36974842/" target="blank">
@@ -276,5 +268,6 @@
             <p>Built in 2022 by Ana Vahcic</p>
         </div><!-- END .wrapper -->
     </footer>
+    <script src="./script/script.js"></script>
 </body>
 </html>
