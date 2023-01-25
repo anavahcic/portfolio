@@ -1,0 +1,113 @@
+@use "./variables" as var;
+
+.headerNav {
+    background-color: #DFE0FC;
+    padding: 40px 0px;
+}
+
+.mainNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float: right;
+    .mainNavLinks {
+        display: flex;
+        justify-content:space-between;
+        li {
+            margin-left: 50px;
+        }
+        a {
+            padding: 5px 10px;
+            text-align: center;
+            border-radius: 0.25em;
+            border: 2px solid transparent;
+            &:hover {
+                border: 2px solid black;
+                font-weight: bold;
+                letter-spacing: 5px;
+            }
+        }
+        .contactBtn {
+            background-color: black;
+            color: white;
+            &:hover {
+                background: #DFE0FC;
+                color: black;
+                border: 2px solid black;
+                font-weight: bold;
+                letter-spacing: 5px;
+            }
+        }
+    }
+}
+
+// Hamburger Nav
+
+.hamNavIcon {
+    display: none;
+    position: fixed;
+    // right: 15px;
+    // top: 15px;
+    right: 0;
+    top: 0;
+    padding: 2%;
+    cursor: pointer;
+    z-index: 100;
+    font-size: 2rem;
+
+    .toggle {
+        display: flex;
+        justify-content: center;
+        transition: 0.3s;
+        &:hover {
+            color: darkBlue;
+        }
+        &:focus {
+            color: darkBlue;
+        }
+    }
+}
+
+.hamNav {
+    display: none;
+    justify-content: right;
+    background-color: white;
+    height: 100vh;
+    width: 80vw;
+    position: fixed;
+    top: 0;
+    right: -80vw; 
+    z-index: 10;
+    transition: 0.5s;
+    // overflow: hidden;
+    ul {
+        flex-direction: column;
+        padding-top: 50px;
+        li {
+            justify-content: center;
+            margin-bottom: 10px;
+            a {
+                font-size: 2.8rem;
+                line-height: 85px;
+                transition: 0.4s;
+                color: black;
+                &:hover {
+                    color: darkBlue;
+                    font-weight: bold;
+                }
+                 &:focus {
+                    color: darkBlue;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+     &.openNav {
+        height: 100%; 
+        transform: translateX(-80vw);
+    } 
+}
+
+.hamNavIcon {
+    color: black;
+}
