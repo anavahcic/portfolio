@@ -25,10 +25,10 @@ portfolio.typeWriter = () => {
             text.textContent = "scuba diver"
         }, 0);
         setTimeout(() => {
-            text.textContent = "educator"
+            text.textContent = "traveler"
         }, 3000);
         setTimeout(() => {
-            text.textContent = "learner"
+            text.textContent = "educator"
         }, 6000);
         setTimeout(() => {
             text.textContent = "vegan"

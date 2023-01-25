@@ -251,7 +251,7 @@ p {
 h1, h2, h3 {
   font-family: "Nunito", sans-serif;
   font-weight: 700;
-  font-size: 3.8rem;
+  font-size: 5.8rem;
 }
 
 h2 {
@@ -505,14 +505,14 @@ header .textContainer h2 {
 }
 
 .headshotImgContainer {
-  width: 40%;
+  width: 50%;
   max-width: 230px;
   padding-top: 40px;
   margin-right: 40px;
 }
 .headshotImgContainer img {
   border-radius: 50%;
-  width: 80%;
+  width: 100%;
 }
 
 .aboutMeBio {
