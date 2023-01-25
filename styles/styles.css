@@ -522,6 +522,7 @@ header .textContainer h2 {
 }
 .aboutMeBio h2 {
   margin-bottom: 10px;
+  margin-bottom: 40px;
   font-family: "Nunito", sans-serif;
 }
 .aboutMeBio p {
@@ -530,8 +531,8 @@ header .textContainer h2 {
 
 .skills {
   background-color: #DFE0FC;
+  padding: 100px;
   color: black h2;
-  color-padding: 40px;
   color-color: black;
 }
 
