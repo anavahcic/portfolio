@@ -97,11 +97,45 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        border: 5px solid black;
+        border-radius: 10px;
+        margin: 20px 0;
+        width: fit-content;
     }
     .projectsImgContainer {
         width: 70%;
     }
   
+}
+
+@media (max-width: 950px) {
+    .skills {
+        padding: 50px 0 50px 0;
+    }
+}
+
+@media (max-width: 750px) {
+    .aboutMeBio {
+        width: 90%;
+    }
+    .projectsTextContainer,
+    .projectsImgContainer {
+        width: 90%;
+    }
+    .contactFlexContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 50px;
+    }
+    .contactTextContainer {
+        width: 100%;
+        padding: 0 40px;
+        text-align: center;
+    }
+    .contactInfo {
+        padding: 30px;
+        margin-left: 100px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -127,6 +161,9 @@
         }
     }
    }
+   .skills ul li i {
+    font-size: 50px;
+    }
    .projectsFlexContainer {
     flex-direction: column;
     align-items: center;
@@ -148,6 +185,31 @@
     margin-bottom: 5px;
    }
 }
+
+@media (max-width: 600px) {
+    .skillsUsed {
+        li {
+            font-size: 0.6rem;
+            letter-spacing: 0;
+        }
+        p {
+            font-size: 0.8rem;
+        }
+    }
+    .contactInfo {
+        padding: 30px;
+        margin-left: 20px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .skillsUsed {
+        li {
+            font-size: 0.4rem;
+            letter-spacing: 0;
+        }
+    }
 
 @media (max-width: 500px) {
     // Desktop Navigation
@@ -200,5 +262,6 @@
     }
    .submitBtn {
     font-size: 0.8rem;
-   }
+        }
+    }
 }
