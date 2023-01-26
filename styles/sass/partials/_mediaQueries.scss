@@ -1,10 +1,9 @@
-@use "./variables";
+@use "./variables" as var;
 
 // Media Queries Styles
 @media (max-width:1110px) {
     header {
-        background-image: none;
-        background: linear-gradient(80deg, #3D48AE, #fbfbfc);
+        background: #DFE0FC;
     }
 }
 @media (max-width: 800px) {
@@ -80,7 +79,6 @@
     }
   
 }
-
 
 @media (max-width: 650px) {
     // Desktop Navigation
