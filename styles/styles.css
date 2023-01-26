@@ -255,7 +255,7 @@ h1, h2, h3 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.6rem;
 }
 
 h3 {
@@ -732,11 +732,14 @@ footer p {
   font-size: 0.8rem;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   header {
     background: #DFE0FC;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
-  .topNav {
+  .mainNav {
     display: none;
   }
   .hamNav {
@@ -791,7 +794,7 @@ footer p {
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
   #menuToggle ~ .menu li #menuToggle :checked ~ .menu li {
-    border: 1px solidd #333;
+    border: 1px solid #333;
     height: 2.5em;
     padding: 0.5em;
     -webkit-transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -835,6 +838,30 @@ footer p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .headshotImgContainer {
+    margin: 0 auto;
+  }
+  .aboutMeBio {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+  .projectsFlexContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projectsImgContainer {
+    width: 70%;
   }
 }
 @media (max-width: 650px) {
