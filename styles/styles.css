@@ -374,14 +374,14 @@ header .textContainer h2 {
 }
 
 .headshotImgContainer {
-  width: 40%;
+  width: 50%;
   max-width: 230px;
   padding-top: 40px;
   margin-right: 40px;
 }
 .headshotImgContainer img {
   border-radius: 50%;
-  width: 80%;
+  width: 100%;
 }
 
 .aboutMeBio {
@@ -391,6 +391,7 @@ header .textContainer h2 {
 }
 .aboutMeBio h2 {
   margin-bottom: 10px;
+  margin-bottom: 40px;
   font-family: "Nunito", sans-serif;
 }
 .aboutMeBio p {
@@ -398,13 +399,10 @@ header .textContainer h2 {
 }
 
 .skills {
-  background-color: #3D48AE;
-  color: #fbfbfc;
-  padding: 100px 0px;
-}
-.skills h2 {
-  padding: 40px;
-  color: #fbfbfc;
+  background-color: #DFE0FC;
+  padding: 100px;
+  color: black h2;
+  color-color: black;
 }
 
 .skillsContainer {
@@ -441,9 +439,6 @@ header .textContainer h2 {
   font-size: 0.6rem;
 }
 
-.projects {
-  margin: 100px 0px;
-}
 .projects h2 {
   padding: 20px;
 }
