@@ -532,24 +532,28 @@ header .textContainer h2 {
 .skills {
   background-color: #DFE0FC;
   padding: 100px;
-  color: black h2;
-  color-color: black;
 }
-
-.skillsContainer {
+.skills h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.skills ul {
+  list-style: none;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 75%;
+  margin: 0 auto;
 }
-
-.individualSkill {
-  margin: 8px;
-  padding: 5px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 150px;
-          flex: 0 0 150px;
+.skills ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -557,17 +561,23 @@ header .textContainer h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25%;
+  min-width: 125px;
+  padding: 25px;
+  text-transform: uppercase;
 }
-.individualSkill span,
-.individualSkill i {
-  margin: 20;
-  padding: 20px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+.skills ul li i {
+  font-size: 80px;
+  padding-bottom: 20px;
 }
-.individualSkill span {
-  font-size: 0.6rem;
+.skills ul li:hover i {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .projects h2 {
@@ -710,16 +720,14 @@ footer p {
   font-size: 0.8rem;
 }
 
-@media (max-width: 1110px) {
+@media (max-width: 1000px) {
   header {
     background: #DFE0FC;
   }
-}
-@media (max-width: 800px) {
   .topNav {
     display: none;
   }
-  .mobileNav {
+  .hamNav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -736,6 +744,9 @@ footer p {
     color: #fff;
     height: 50px;
     padding: 1em;
+  }
+  .hamNavIcon {
+    display: block;
   }
   .menuButtonContainer {
     display: -webkit-box;
@@ -818,7 +829,7 @@ footer p {
   .topNav {
     display: none;
   }
-  .mobileNav {
+  .hamNav {
     display: block;
   }
   .aboutFlexContainer {
@@ -874,6 +885,9 @@ footer p {
     display: none;
   }
   .mobileNav {
+    display: block;
+  }
+  .hamNavIcon {
     display: block;
   }
   .aboutFlexContainer {

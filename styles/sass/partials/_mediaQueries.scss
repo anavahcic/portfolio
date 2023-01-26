@@ -1,19 +1,17 @@
 @use "./variables" as var;
 
 // Media Queries Styles
-@media (max-width:1110px) {
+@media (max-width: 1000px) {
     header {
         background: #DFE0FC;
     }
-}
-@media (max-width: 800px) {
     // Desktop Navigation
     .topNav {
         display: none;
     }
     // Mobile Navigation
     // Inspiration from https://alvarotrigo.com/blog/hamburger-menu-css/
-    .mobileNav {
+    .hamNav {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -21,6 +19,9 @@
         color: #fff;
         height: 50px;
         padding: 1em;
+    }
+    .hamNavIcon {
+        display: block;
     }
     .menuButtonContainer {
         display: flex;
@@ -86,7 +87,7 @@
         display: none;
     }
     // Mobile Navigation
-    .mobileNav {
+    .hamNav {
         display: block;
     }
    .aboutFlexContainer {
@@ -132,6 +133,9 @@
     }
     // Mobile Navigation
     .mobileNav {
+        display: block;
+    }
+    .hamNavIcon {
         display: block;
     }
    .aboutFlexContainer {

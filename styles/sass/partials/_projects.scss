@@ -1,0 +1,52 @@
+@use "./variables" as var;
+
+// Projects section styles
+.projects {
+    h2 {
+        padding: 20px;
+    }
+}
+.projectsFlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+.projectsImgContainer {
+   width: 30%;
+   padding: 20px;
+}
+.projectsTextContainer {
+    width: 70%;
+    padding: 20px 0px 0px 20px;
+    text-align: left;
+    h3 {
+       margin-bottom: 10px;
+    }
+    .skillsUsed,
+    .projectsLinks {
+        display: flex;
+    }
+    .skillsUsed {
+        li {
+            color: #818CEF;
+            font-size: 0.8rem;
+            margin: 0px 5px 0px 0px;
+        }
+    }
+    .projectsLinks {
+        li {
+            background-color:#FBAF01 ;
+            margin: 20px;
+            padding: 10px;
+            margin-left: 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+    a {
+        color: blue;
+        &:hover {
+            color: #818CEF;
+        }
+    }
+    
+}
