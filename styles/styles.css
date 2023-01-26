@@ -580,6 +580,9 @@ header .textContainer h2 {
   transition: 0.4s;
 }
 
+.projects {
+  padding: 100px;
+}
 .projects h2 {
   padding: 20px;
 }
