@@ -627,11 +627,15 @@ header .textContainer h2 {
   border-radius: 5px;
   cursor: pointer;
 }
+.projectsTextContainer .projectsLinks li:hover {
+  background-color: white;
+  border: 2px solid #FBAF01;
+}
 .projectsTextContainer a {
   color: blue;
 }
 .projectsTextContainer a:hover {
-  color: #818CEF;
+  color: #FBAF01;
 }
 
 .contact {
@@ -710,6 +714,11 @@ textarea {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+.submitBtn:hover {
+  background-color: white;
+  color: #FBAF01;
+  border: 2px solid #FBAF01;
 }
 
 footer {

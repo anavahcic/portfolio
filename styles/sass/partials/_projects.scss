@@ -41,12 +41,16 @@
             margin-left: 0;
             border-radius: 5px;
             cursor: pointer;
+            &:hover {
+                background-color: white;
+                border: 2px solid #FBAF01;
+            }
         }
     }
     a {
         color: blue;
         &:hover {
-            color: #818CEF;
+            color: #FBAF01;
         }
     }
     
