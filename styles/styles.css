@@ -322,18 +322,18 @@ img {
 .mainNav .mainNavLinks a:hover {
   border: 2px solid black;
   font-weight: bold;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 .mainNav .mainNavLinks .contactBtn {
-  background-color: black;
-  color: white;
+  background-color: #FBAF01;
+  color: black;
 }
 .mainNav .mainNavLinks .contactBtn:hover {
-  background: #DFE0FC;
-  color: black;
-  border: 2px solid black;
+  background: white;
+  color: #FBAF01;
+  border: 2px solid #FBAF01;
   font-weight: bold;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 
 .hamNavIcon {
@@ -357,10 +357,10 @@ img {
   transition: 0.3s;
 }
 .hamNavIcon .toggle:hover {
-  color: darkBlue;
+  color: #FBAF01;
 }
 .hamNavIcon .toggle:focus {
-  color: darkBlue;
+  color: #FBAF01;
 }
 
 .hamNav {
@@ -399,11 +399,11 @@ img {
   color: black;
 }
 .hamNav ul li a:hover {
-  color: darkBlue;
+  color: #FBAF01;
   font-weight: bold;
 }
 .hamNav ul li a:focus {
-  color: darkBlue;
+  color: #FBAF01;
   font-weight: bold;
 }
 .hamNav.openNav {

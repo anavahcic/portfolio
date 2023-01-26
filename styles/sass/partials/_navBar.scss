@@ -24,18 +24,18 @@
             &:hover {
                 border: 2px solid black;
                 font-weight: bold;
-                letter-spacing: 5px;
+                letter-spacing: 3px;
             }
         }
         .contactBtn {
-            background-color: black;
-            color: white;
+            background-color: #FBAF01;
+            color: black;
             &:hover {
-                background: #DFE0FC;
-                color: black;
-                border: 2px solid black;
+                background: white;
+                color: #FBAF01;
+                border: 2px solid #FBAF01;
                 font-weight: bold;
-                letter-spacing: 5px;
+                letter-spacing: 3px;
             }
         }
     }
@@ -60,10 +60,10 @@
         justify-content: center;
         transition: 0.3s;
         &:hover {
-            color: darkBlue;
+            color: #FBAF01
         }
         &:focus {
-            color: darkBlue;
+            color: #FBAF01;
         }
     }
 }
@@ -92,11 +92,11 @@
                 transition: 0.4s;
                 color: black;
                 &:hover {
-                    color: darkBlue;
+                    color: #FBAF01;
                     font-weight: bold;
                 }
                  &:focus {
-                    color: darkBlue;
+                    color: #FBAF01;
                     font-weight: bold;
                 }
             }
