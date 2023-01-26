@@ -1,0 +1,69 @@
+@use "./variables" as var;
+
+// / Contact section styles
+.contact {
+    background-color: #DFE0FC;
+}
+.contactFlexContainer,
+.contactInfo {
+    display: flex;
+    padding: 100px 50px;
+}
+
+.contactTextContainer {
+    width:min-content;
+    text-align: left;
+    margin-right: 20px;
+    h2 {
+        margin-bottom: 50px;
+        font-size: 2.6rem;
+    }
+    br {
+        margin: 15px;
+    }
+
+}
+.contactInfo {
+    display: flex;
+    justify-content: flex-start;
+    li {
+        padding: 15px;
+        a {
+        transition: color 0.5s;
+        &:hover {
+            color: #FBAF01;
+            }
+        }
+    }
+}
+// Form styles
+label,
+input {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px;
+}
+label {
+    text-transform: uppercase;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: 1px solid white;
+}
+
+.submitBtn {
+    background-color: #FBAF0A;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+        background-color: white;
+        color: #FBAF01;
+        border: 2px solid #FBAF01;
+    }
+}

@@ -1,7 +1,11 @@
 @use "./partials/setup";
 @use "./partials/variables";
 @use "./partials/typography";
+@use "./partials/navBar";
 @use "./partials/header";
-@use "./partials/main";
+@use "./partials/about";
+@use "./partials/skills";
+@use "./partials/projects";
+@use "./partials/contact";
 @use "./partials/footer";
 @use "./partials/mediaQueries";

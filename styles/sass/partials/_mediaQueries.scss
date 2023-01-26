@@ -1,20 +1,18 @@
-@use "./variables";
+@use "./variables" as var;
 
 // Media Queries Styles
-@media (max-width:1110px) {
+@media (max-width: 1100px) {
     header {
-        background-image: none;
-        background: linear-gradient(80deg, #3D48AE, #fbfbfc);
+        background: #DFE0FC;
+        height: fit-content;
     }
-}
-@media (max-width: 800px) {
     // Desktop Navigation
-    .topNav {
+    .mainNav {
         display: none;
     }
     // Mobile Navigation
     // Inspiration from https://alvarotrigo.com/blog/hamburger-menu-css/
-    .mobileNav {
+    .hamNav {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -22,6 +20,9 @@
         color: #fff;
         height: 50px;
         padding: 1em;
+    }
+    .hamNavIcon {
+        display: block;
     }
     .menuButtonContainer {
         display: flex;
@@ -44,7 +45,7 @@
        border: 0;
        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     #menuToggle :checked ~ .menu li {
-        border: 1px solidd #333;
+        border: 1px solid #333;
         height: 2.5em;
         padding: 0.5em;
         transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -78,9 +79,64 @@
     .menuButtonContainer {
      display: flex;
     }
+
+    // About me section
+    .headshotImgContainer {
+        margin: 0 auto;
+      
+    }
+    .aboutMeBio {
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+    }
+
+    // Projects section
+    .projectsFlexContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 5px solid black;
+        border-radius: 10px;
+        margin: 20px 0;
+        width: fit-content;
+    }
+    .projectsImgContainer {
+        width: 70%;
+    }
   
 }
 
+@media (max-width: 950px) {
+    .skills {
+        padding: 50px 0 50px 0;
+    }
+}
+
+@media (max-width: 750px) {
+    .aboutMeBio {
+        width: 90%;
+    }
+    .projectsTextContainer,
+    .projectsImgContainer {
+        width: 90%;
+    }
+    .contactFlexContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 50px;
+    }
+    .contactTextContainer {
+        width: 100%;
+        padding: 0 40px;
+        text-align: center;
+    }
+    .contactInfo {
+        padding: 30px;
+        margin-left: 100px;
+    }
+}
 
 @media (max-width: 650px) {
     // Desktop Navigation
@@ -88,7 +144,7 @@
         display: none;
     }
     // Mobile Navigation
-    .mobileNav {
+    .hamNav {
         display: block;
     }
    .aboutFlexContainer {
@@ -105,6 +161,9 @@
         }
     }
    }
+   .skills ul li i {
+    font-size: 50px;
+    }
    .projectsFlexContainer {
     flex-direction: column;
     align-items: center;
@@ -127,6 +186,31 @@
    }
 }
 
+@media (max-width: 600px) {
+    .skillsUsed {
+        li {
+            font-size: 0.6rem;
+            letter-spacing: 0;
+        }
+        p {
+            font-size: 0.8rem;
+        }
+    }
+    .contactInfo {
+        padding: 30px;
+        margin-left: 20px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .skillsUsed {
+        li {
+            font-size: 0.4rem;
+            letter-spacing: 0;
+        }
+    }
+
 @media (max-width: 500px) {
     // Desktop Navigation
     .topNav {
@@ -134,6 +218,9 @@
     }
     // Mobile Navigation
     .mobileNav {
+        display: block;
+    }
+    .hamNavIcon {
         display: block;
     }
    .aboutFlexContainer {
@@ -175,5 +262,6 @@
     }
    .submitBtn {
     font-size: 0.8rem;
-   }
+        }
+    }
 }
