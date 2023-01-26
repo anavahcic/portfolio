@@ -285,6 +285,137 @@ img {
   max-width: 1200px;
 }
 
+.headerNav {
+  background-color: #DFE0FC;
+  padding: 40px 0px;
+}
+
+.mainNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: right;
+}
+.mainNav .mainNavLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.mainNav .mainNavLinks li {
+  margin-left: 50px;
+}
+.mainNav .mainNavLinks a {
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 0.25em;
+  border: 2px solid transparent;
+}
+.mainNav .mainNavLinks a:hover {
+  border: 2px solid black;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+.mainNav .mainNavLinks .contactBtn {
+  background-color: black;
+  color: white;
+}
+.mainNav .mainNavLinks .contactBtn:hover {
+  background: #DFE0FC;
+  color: black;
+  border: 2px solid black;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.hamNavIcon {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 2%;
+  cursor: pointer;
+  z-index: 100;
+  font-size: 2rem;
+}
+.hamNavIcon .toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.hamNavIcon .toggle:hover {
+  color: darkBlue;
+}
+.hamNavIcon .toggle:focus {
+  color: darkBlue;
+}
+
+.hamNav {
+  display: none;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  background-color: white;
+  height: 100vh;
+  width: 80vw;
+  position: fixed;
+  top: 0;
+  right: -80vw;
+  z-index: 10;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.hamNav ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 50px;
+}
+.hamNav ul li {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px;
+}
+.hamNav ul li a {
+  font-size: 2.8rem;
+  line-height: 85px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: black;
+}
+.hamNav ul li a:hover {
+  color: darkBlue;
+  font-weight: bold;
+}
+.hamNav ul li a:focus {
+  color: darkBlue;
+  font-weight: bold;
+}
+.hamNav.openNav {
+  height: 100%;
+  -webkit-transform: translateX(-80vw);
+          transform: translateX(-80vw);
+}
+
+.hamNavIcon {
+  color: black;
+}
+
 header {
   height: 80vh;
   background-color: #DFE0FC;
