@@ -3,11 +3,11 @@
 // Footer section styles
 footer {
     height: 40px;
-    background-color: black;
+    background-color: var.$black;
     p {
         text-align: center;
         padding-top: 10px;
-        color: white;
+        color: var.$white;
         font-size: 0.8rem;
 
     }
