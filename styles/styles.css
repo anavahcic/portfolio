@@ -320,16 +320,16 @@ img {
   border: 2px solid transparent;
 }
 .mainNav .mainNavLinks a:hover {
-  border: 2px solid black;
+  border: 2px solid #2A3033;
   font-weight: bold;
   letter-spacing: 3px;
 }
 .mainNav .mainNavLinks .contactBtn {
   background-color: #FBAF01;
-  color: black;
+  color: #2A3033;
 }
 .mainNav .mainNavLinks .contactBtn:hover {
-  background: white;
+  background: #fbfbfc;
   color: #FBAF01;
   border: 2px solid #FBAF01;
   font-weight: bold;
@@ -368,7 +368,7 @@ img {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
-  background-color: white;
+  background-color: #fbfbfc;
   height: 100vh;
   width: 80vw;
   position: fixed;
@@ -396,7 +396,7 @@ img {
   line-height: 85px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  color: black;
+  color: #2A3033;
 }
 .hamNav ul li a:hover {
   color: #FBAF01;
@@ -413,7 +413,7 @@ img {
 }
 
 .hamNavIcon {
-  color: black;
+  color: #2A3033;
 }
 
 header {
@@ -464,7 +464,7 @@ header .imgContainer {
   height: 100%;
   width: 100%;
   background-color: #DFE0FC;
-  border-left: 2.5px solid black;
+  border-left: 2.5px solid #2A3033;
   -webkit-animation: animate 3s steps(12) infinite;
           animation: animate 3s steps(12) infinite;
 }
@@ -620,7 +620,7 @@ header .imgContainer {
   display: flex;
 }
 .projectsTextContainer .skillsUsed li {
-  color: #818CEF;
+  color: #DFE0FC;
   font-size: 0.8rem;
   margin: 0px 5px 0px 0px;
 }
@@ -633,11 +633,11 @@ header .imgContainer {
   cursor: pointer;
 }
 .projectsTextContainer .projectsLinks li:hover {
-  background-color: white;
+  background-color: #fbfbfc;
   border: 2px solid #FBAF01;
 }
 .projectsTextContainer a {
-  color: blue;
+  color: #0000FF;
 }
 .projectsTextContainer a:hover {
   color: #FBAF01;
@@ -708,11 +708,11 @@ label {
 input,
 textarea {
   width: 100%;
-  border: 1px solid white;
+  border: 1px solid #fbfbfc;
 }
 
 .submitBtn {
-  background-color: #FBAF0A;
+  background-color: #FBAF01;
   text-align: center;
   margin-top: 20px;
   padding: 10px 20px;
@@ -721,19 +721,19 @@ textarea {
   cursor: pointer;
 }
 .submitBtn:hover {
-  background-color: white;
+  background-color: #fbfbfc;
   color: #FBAF01;
   border: 2px solid #FBAF01;
 }
 
 footer {
   height: 40px;
-  background-color: black;
+  background-color: #2A3033;
 }
 footer p {
   text-align: center;
   padding-top: 10px;
-  color: white;
+  color: #fbfbfc;
   font-size: 0.8rem;
 }
 
@@ -761,7 +761,7 @@ footer p {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    color: #fff;
+    color: #fbfbfc;
     height: 50px;
     padding: 1em;
   }
@@ -799,7 +799,7 @@ footer p {
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
   #menuToggle ~ .menu li #menuToggle :checked ~ .menu li {
-    border: 1px solid #333;
+    border: 1px solid #2A3033;
     height: 2.5em;
     padding: 0.5em;
     -webkit-transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -815,11 +815,11 @@ footer p {
     margin: 0;
     padding: 0.5em 0;
     width: 100%;
-    color: white;
-    background-color: #222;
+    color: #fbfbfc;
+    background-color: #2A3033;
   }
   #menuToggle ~ .menu li .menu > li:not(:last-child) {
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid #2A3033;
   }
   .aboutFlexContainer {
     -webkit-box-orient: vertical;
@@ -864,7 +864,7 @@ footer p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    border: 5px solid black;
+    border: 5px solid #2A3033;
     border-radius: 10px;
     margin: 20px 0;
     width: -webkit-fit-content;
@@ -1018,6 +1018,9 @@ footer p {
   .aboutFlexContainer .aboutMeBio p {
     font-size: 0.9rem;
   }
+  .projects {
+    padding: 10px;
+  }
   .projectsFlexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1040,15 +1043,30 @@ footer p {
     font-size: 0.8rem;
   }
   ul {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   ul a {
     font-size: 0.6rem;
   }
   .submitBtn {
     font-size: 0.8rem;
+  }
+}
+@media (max-width: 400px) {
+  .projects {
+    padding: 10px;
+  }
+  .projectsFlexContainer {
+    width: 100%;
+  }
+  .contactInfo {
+    padding: 2px;
+    margin: 0 auto;
+  }
+  .submitBtn {
+    margin: 30px 40px;
   }
 }

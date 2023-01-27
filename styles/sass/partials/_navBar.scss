@@ -1,7 +1,7 @@
 @use "./variables" as var;
 
 .headerNav {
-    background-color: #DFE0FC;
+    background-color: var.$lightPurple;
     padding: 40px 0px;
 }
 
@@ -22,18 +22,18 @@
             border-radius: 0.25em;
             border: 2px solid transparent;
             &:hover {
-                border: 2px solid black;
+                border: 2px solid var.$black;
                 font-weight: bold;
                 letter-spacing: 3px;
             }
         }
         .contactBtn {
-            background-color: #FBAF01;
-            color: black;
+            background-color: var.$yellow;
+            color: var.$black;
             &:hover {
-                background: white;
-                color: #FBAF01;
-                border: 2px solid #FBAF01;
+                background: var.$white;
+                color: var.$yellow;
+                border: 2px solid var.$yellow;
                 font-weight: bold;
                 letter-spacing: 3px;
             }
@@ -60,10 +60,10 @@
         justify-content: center;
         transition: 0.3s;
         &:hover {
-            color: #FBAF01
+            color: var.$yellow;
         }
         &:focus {
-            color: #FBAF01;
+            color: var.$yellow;
         }
     }
 }
@@ -71,7 +71,7 @@
 .hamNav {
     display: none;
     justify-content: right;
-    background-color: white;
+    background-color: var.$white;
     height: 100vh;
     width: 80vw;
     position: fixed;
@@ -90,13 +90,13 @@
                 font-size: 2.8rem;
                 line-height: 85px;
                 transition: 0.4s;
-                color: black;
+                color: var.$black;
                 &:hover {
-                    color: #FBAF01;
+                    color: var.$yellow;
                     font-weight: bold;
                 }
                  &:focus {
-                    color: #FBAF01;
+                    color: var.$yellow;
                     font-weight: bold;
                 }
             }
@@ -109,5 +109,5 @@
 }
 
 .hamNavIcon {
-    color: black;
+    color: var.$black;
 }

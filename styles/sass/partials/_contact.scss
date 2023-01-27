@@ -2,7 +2,7 @@
 
 // / Contact section styles
 .contact {
-    background-color: #DFE0FC;
+    background-color: var.$lightPurple;
 }
 .contactFlexContainer,
 .contactInfo {
@@ -31,7 +31,7 @@
         a {
         transition: color 0.5s;
         &:hover {
-            color: #FBAF01;
+            color: var.$yellow;
             }
         }
     }
@@ -50,11 +50,11 @@ label {
 input,
 textarea {
     width: 100%;
-    border: 1px solid white;
+    border: 1px solid var.$white;
 }
 
 .submitBtn {
-    background-color: #FBAF0A;
+    background-color: var.$yellow;
     text-align: center;
     margin-top: 20px;
     padding: 10px 20px;
@@ -62,8 +62,8 @@ textarea {
     border-radius: 5px;
     cursor: pointer;
     &:hover {
-        background-color: white;
-        color: #FBAF01;
-        border: 2px solid #FBAF01;
+        background-color: var.$white;
+        color: var.$yellow;
+        border: 2px solid var.$yellow;
     }
 }
