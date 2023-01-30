@@ -8,7 +8,8 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=PT+Sans:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans&display=swap" rel="stylesheet"> 
+
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/323dbf2a01.js" crossorigin="anonymous"></script>
     <!-- Icon Import -->
@@ -18,7 +19,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
     <title>Ana Vahcic</title>
 </head>
 
@@ -29,7 +30,6 @@
             <!-- Main/Desktop Navigation -->
             <div class="mainNav">
                 <ul class="mainNavLinks">
-                    <li><a href="#header">home</a></li>
                     <li><a href="#about">about</a></li>
                     <li><a href="#skills">skills</a></li>
                     <li><a href="#projects">projects</a></li>
@@ -63,7 +63,7 @@
             <div class="textContainer">
                 <h1>ana vahcic</h1>
                 <h2 class="typeContainer">
-                    <span class="text firstText">i'm a front-end developer &</span>
+                    <span class="text firstText">front-end web developer &</span>
                     <span class="text secondText"></span>
                 </h2>
             </div><!-- END .textContainer -->
@@ -201,11 +201,25 @@
         <!-- Contact Section -->
         <section id="contact" class="contact">
             <div class="wrapper">
+                <h2>get in touch</h2>
                 <div class="contactFlexContainer">
+                    <form 
+                    id="myForm" name="message" method="POST" data-netlify="true" onSubmit="submit" data-netlify-honeypot="botField" 
+                    >
+                    <input type="hidden" name="botField">
+                        <label id="nameLabel" for="userName">Name</label>
+                        <input id="userName" type="text" name="name" required="">
+
+                        <label id="emailLabel for="userEmail">Email Address</label>
+                        <input id="userEmail" type="email" name="email" required="">
+
+                        <label id="messageLabel" for="userMessage">Message</label>
+                        <textarea name="userMessage" id="userMessage" cols="30" rows="10" required=""></textarea>
+
+                        <button class="submitBtn">send message</button>
+                    </form>
+
                     <div class="contactTextContainer">
-                        <h2>get in 
-                            <br>touch</br>
-                        </h2>
                         <p>If you'd like to connect or have questions, send me a message. I always like to chat about coding, scuba diving, sharks or just anything.</p>
                         <ul class="contactInfo">
                             <li>
@@ -230,23 +244,8 @@
                             </li>
                         </ul> 
                     </div><!-- END .contactTextContainer -->
-                    
-                    <form 
-                    id="myForm" name="message" method="POST" data-netlify="true" onSubmit="submit" data-netlify-honeypot="botField" 
-                    >
-                    <input type="hidden" name="botField">
-                        <label id="nameLabel" for="userName">Name</label>
-                        <input id="userName" type="text" name="name" required="">
-
-                        <label id="emailLabel for="userEmail">Email Address</label>
-                        <input id="userEmail" type="email" name="email" required="">
-
-                        <label id="messageLabel" for="userMessage">Message</label>
-                        <textarea name="userMessage" id="userMessage" cols="30" rows="10" required=""></textarea>
-
-                        <button class="submitBtn">send message</button>
-                    </form>
                 </div><!-- END .contactFlexContainer -->
+                <a class="backToTop" href="#header">back to top</a>
             </div><!-- END .wrapper -->
         </section><!-- END Contact Section -->
     </main>

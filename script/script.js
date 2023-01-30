@@ -40,18 +40,18 @@ portfolio.typeWriter = () => {
 };
 
 //Toggle nightmode and daymode
-portfolio.nightMode = () => {
-    const icon = document.getElementById("icon");
-    const body = document.querySelector("body");
-    icon.onclick = () => {
-        body.classList.toggle("nightMode");
-        if (document.body.classList.contains("nightMode")){
-            icon.src = "assets/lightMode.png"
-        } else {
-            icon.src = "assets/darkMode.png"
-        }
-    }
-}
+// portfolio.nightMode = () => {
+//     const icon = document.getElementById("icon");
+//     const body = document.querySelector("body");
+//     icon.onclick = () => {
+//         body.classList.toggle("nightMode");
+//         if (document.body.classList.contains("nightMode")){
+//             icon.src = "assets/lightMode.png"
+//         } else {
+//             icon.src = "assets/darkMode.png"
+//         }
+//     }
+// }
 
 //init function
 portfolio.init = () => {

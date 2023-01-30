@@ -2,32 +2,32 @@
 
 // / Contact section styles
 .contact {
-    // background-color: var.$lightPurple;
+    padding: 100px 0;
+    h2 {
+        text-align: center;
+        text-decoration: underline var.$orange 5px;
+        margin-bottom: 150px;
+        font-size: 2.6rem;
+    }
 }
 .contactFlexContainer,
 .contactInfo {
     display: flex;
-    padding: 100px 50px;
+    margin-bottom: 100px;
 }
 
 .contactTextContainer {
-    width:min-content;
+    width:40%;
     text-align: left;
     margin-right: 20px;
-    h2 {
-        margin-bottom: 50px;
-        font-size: 2.6rem;
-    }
-    br {
-        margin: 15px;
-    }
-
+    margin-top: 100px;
 }
 .contactInfo {
     display: flex;
     justify-content: flex-start;
     li {
         padding: 15px;
+        margin-top: 50px;
         a {
         transition: color 0.5s;
         &:hover {
@@ -67,3 +67,17 @@ textarea {
         border: 2px solid var.$orange;
     }
 }
+
+.backToTop {
+    color: var.$white;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 530px;
+    margin-right: 530px;
+    cursor: pointer;
+    &:hover {
+        font-weight: bold;
+        letter-spacing: 3px;
+        }
+    }

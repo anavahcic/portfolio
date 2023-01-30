@@ -241,7 +241,7 @@ button,
 p {
   margin: 0 auto;
   padding: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Albert Sans", sans-serif;
   font-size: 1rem;
   font-weight: 300;
   letter-spacing: 1px;
@@ -250,7 +250,7 @@ p {
 }
 
 h1, h2, h3 {
-  font-family: "Nunito", sans-serif;
+  font-family: "Albert Sans", sans-serif;
   font-weight: 700;
   font-size: 5.8rem;
 }
@@ -261,6 +261,7 @@ h2 {
 
 h3 {
   font-size: 1.4rem;
+  text-transform: uppercase;
 }
 
 ul {
@@ -322,7 +323,7 @@ img {
   border: 2px solid transparent;
 }
 .mainNav .mainNavLinks a:hover {
-  border: 2px solid #000000;
+  border: 2px solid #FFAC41;
   font-weight: bold;
   letter-spacing: 3px;
 }
@@ -379,6 +380,7 @@ img {
   z-index: 10;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  overflow: hidden;
 }
 .hamNav ul {
   -webkit-box-orient: vertical;
@@ -415,7 +417,7 @@ img {
 }
 
 .hamNavIcon {
-  color: #000000;
+  color: #F8F8F8;
 }
 
 header {
@@ -434,7 +436,6 @@ header .wrapper {
 header .textContainer {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  margin: 90px 0;
   overflow: hidden;
   text-align: left;
   position: absolute;
@@ -448,11 +449,8 @@ header .textContainer h1 {
 }
 header .textContainer h2 {
   padding-bottom: 10px;
-}
-header .imgContainer {
-  position: absolute;
-  right: 0;
-  bottom: 150px;
+  -webkit-text-decoration: underline #FFAC41 5px;
+          text-decoration: underline #FFAC41 5px;
 }
 
 .typeContainer .text {
@@ -490,15 +488,6 @@ header .imgContainer {
   }
 }
 
-#icon {
-  width: 30px;
-  cursor: pointer;
-  position: fixed;
-  left: 1%;
-  top: 1%;
-  z-index: 10000;
-}
-
 .aboutFlexContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -511,7 +500,7 @@ header .imgContainer {
   width: 50%;
   max-width: 230px;
   padding-top: 40px;
-  margin-right: 40px;
+  margin-left: 100px;
 }
 .headshotImgContainer img {
   border-radius: 50%;
@@ -521,15 +510,18 @@ header .imgContainer {
 .aboutMeBio {
   width: 60%;
   padding: 40px 50px;
-  margin-left: 20px;
+  margin-left: 200px;
 }
 .aboutMeBio h2 {
   margin-bottom: 10px;
   margin-bottom: 40px;
-  font-family: "Nunito", sans-serif;
+  font-size: 2.6rem;
+  font-family: "Albert Sans", sans-serif;
+  -webkit-text-decoration: underline #FFAC41 5px;
+          text-decoration: underline #FFAC41 5px;
 }
 .aboutMeBio p {
-  font-family: "PT Sans", sans-serif;
+  font-family: "Albert Sans", sans-serif;
 }
 
 .skills {
@@ -537,7 +529,10 @@ header .imgContainer {
 }
 .skills h2 {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
+  font-size: 2.6rem;
+  -webkit-text-decoration: underline #FFAC41 5px;
+          text-decoration: underline #FFAC41 5px;
 }
 .skills ul {
   list-style: none;
@@ -587,6 +582,11 @@ header .imgContainer {
 }
 .projects h2 {
   padding: 20px;
+  margin-bottom: 100px;
+  font-size: 2.6rem;
+  text-align: center;
+  -webkit-text-decoration: underline #FFAC41 5px;
+          text-decoration: underline #FFAC41 5px;
 }
 
 .projectsFlexContainer {
@@ -640,27 +640,30 @@ header .imgContainer {
   color: #FFAC41;
 }
 
+.contact {
+  padding: 100px 0;
+}
+.contact h2 {
+  text-align: center;
+  -webkit-text-decoration: underline #FFAC41 5px;
+          text-decoration: underline #FFAC41 5px;
+  margin-bottom: 150px;
+  font-size: 2.6rem;
+}
+
 .contactFlexContainer,
 .contactInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 100px 50px;
+  margin-bottom: 100px;
 }
 
 .contactTextContainer {
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  width: 40%;
   text-align: left;
   margin-right: 20px;
-}
-.contactTextContainer h2 {
-  margin-bottom: 50px;
-  font-size: 2.6rem;
-}
-.contactTextContainer br {
-  margin: 15px;
+  margin-top: 100px;
 }
 
 .contactInfo {
@@ -673,6 +676,7 @@ header .imgContainer {
 }
 .contactInfo li {
   padding: 15px;
+  margin-top: 50px;
 }
 .contactInfo li a {
   -webkit-transition: color 0.5s;
@@ -717,6 +721,20 @@ textarea {
   background-color: #F8F8F8;
   color: #FFAC41;
   border: 2px solid #FFAC41;
+}
+
+.backToTop {
+  color: #F8F8F8;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 530px;
+  margin-right: 530px;
+  cursor: pointer;
+}
+.backToTop:hover {
+  font-weight: bold;
+  letter-spacing: 3px;
 }
 
 footer {
