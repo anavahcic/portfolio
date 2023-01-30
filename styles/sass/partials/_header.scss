@@ -12,7 +12,6 @@ header {
     }
     .textContainer {
         flex-basis: 100%;
-        overflow: hidden;
         h1 {
             margin: 0 auto;
             padding-top: 50px;
@@ -33,6 +32,7 @@ header {
 .typeContainer {
     .text {
       position: relative;
+      overflow: hidden;
     }
     .secondText {
         &::before {
@@ -45,6 +45,7 @@ header {
           background-color: var.$black;
           border-left: 2.5px solid var.$black;
           animation: animate 3s steps(12) infinite;
+          overflow: hidden;
       }
       &::after {
         content: "."
