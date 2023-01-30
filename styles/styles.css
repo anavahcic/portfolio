@@ -261,6 +261,7 @@ h2 {
 
 h3 {
   font-size: 1.4rem;
+  text-transform: uppercase;
 }
 
 ul {
@@ -434,7 +435,6 @@ header .wrapper {
 header .textContainer {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  margin: 90px 0;
   overflow: hidden;
   text-align: left;
   position: absolute;
@@ -448,11 +448,6 @@ header .textContainer h1 {
 }
 header .textContainer h2 {
   padding-bottom: 10px;
-}
-header .imgContainer {
-  position: absolute;
-  right: 0;
-  bottom: 150px;
 }
 
 .typeContainer .text {
