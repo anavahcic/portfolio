@@ -1,9 +1,6 @@
 @use "./variables" as var;
 
 // About section styles
-.about {
-    // background-color: var.$white;
-}
 .aboutFlexContainer {
     display: flex;
     padding-top: 40px;
@@ -27,6 +24,7 @@
         margin-bottom: 10px;
         margin-bottom: 40px;
         font-family: var.$header;
+        text-decoration: underline var.$orange 5px;
     }
     p {
         font-family: var.$body;

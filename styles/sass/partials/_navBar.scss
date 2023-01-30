@@ -23,7 +23,7 @@
             border-radius: 0.25em;
             border: 2px solid transparent;
             &:hover {
-                border: 2px solid var.$black;
+                border: 2px solid var.$orange;
                 font-weight: bold;
                 letter-spacing: 3px;
             }
@@ -80,7 +80,7 @@
     right: -80vw; 
     z-index: 10;
     transition: 0.5s;
-    // overflow: hidden;
+    overflow: hidden;
     ul {
         flex-direction: column;
         padding-top: 50px;
@@ -110,5 +110,5 @@
 }
 
 .hamNavIcon {
-    color: var.$black;
+    color: var.$white;
 }
