@@ -436,7 +436,6 @@ header .wrapper {
 header .textContainer {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  overflow: hidden;
   text-align: left;
   position: absolute;
   bottom: 50%;
@@ -455,6 +454,7 @@ header .textContainer h2 {
 
 .typeContainer .text {
   position: relative;
+  overflow: hidden;
 }
 .typeContainer .secondText::before {
   content: "";
@@ -467,6 +467,7 @@ header .textContainer h2 {
   border-left: 2.5px solid #000000;
   -webkit-animation: animate 3s steps(12) infinite;
           animation: animate 3s steps(12) infinite;
+  overflow: hidden;
 }
 .typeContainer .secondText::after {
   content: ".";
@@ -748,11 +749,14 @@ footer p {
   font-size: 0.8rem;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 950px) {
   header {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+  }
+  header h1 {
+    font-size: 4rem;
   }
   .mainNav {
     display: none;
@@ -843,6 +847,9 @@ footer p {
   .aboutFlexContainer .headshotImgContainer {
     width: 100%;
   }
+  .skills {
+    padding: 50px 0 50px 0;
+  }
   .contactTextContainer {
     margin-right: 50px;
   }
@@ -859,6 +866,7 @@ footer p {
   }
   .aboutMeBio {
     text-align: center;
+    margin: 0 auto;
   }
   h2 {
     text-align: center;
@@ -874,8 +882,6 @@ footer p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    border: 5px solid #000000;
-    border-radius: 10px;
     margin: 20px 0;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -884,10 +890,29 @@ footer p {
   .projectsImgContainer {
     width: 70%;
   }
+  .contactFlexContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contactTextContainer {
+    margin: 0 auto;
+  }
+  .contact h2 {
+    margin-bottom: 100px;
+  }
+  .backToTop {
+    margin-left: 350px;
+    margin-right: 350px;
+  }
 }
-@media (max-width: 950px) {
-  .skills {
-    padding: 50px 0 50px 0;
+@media (max-width: 860px) {
+  .typeContainer {
+    display: none;
   }
 }
 @media (max-width: 750px) {
@@ -903,10 +928,10 @@ footer p {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 100px 50px;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 50px;
   }
   .contactTextContainer {
     width: 100%;
@@ -916,6 +941,10 @@ footer p {
   .contactInfo {
     padding: 30px;
     margin-left: 100px;
+  }
+  .backToTop {
+    margin-left: 260px;
+    margin-right: 260px;
   }
 }
 @media (max-width: 650px) {
@@ -961,7 +990,10 @@ footer p {
             align-items: center;
   }
   .projectsFlexContainer .projectsImgContainer {
-    width: 70%;
+    width: 90%;
+  }
+  .projectsFlexContainer .projectsTextContainer h3 {
+    font-size: 1.2rem;
   }
   .contactTextContainer {
     margin-right: 50px;
@@ -975,14 +1007,15 @@ footer p {
   .submitBtn {
     margin-bottom: 5px;
   }
+  .backToTop {
+    margin-left: 220px;
+    margin-right: 220px;
+  }
 }
 @media (max-width: 600px) {
-  .skillsUsed li {
+  .projectsTextContainer .skillsUsed li {
     font-size: 0.6rem;
     letter-spacing: 0;
-  }
-  .skillsUsed p {
-    font-size: 0.8rem;
   }
   .contactInfo {
     padding: 30px;
@@ -990,8 +1023,11 @@ footer p {
   }
 }
 @media (max-width: 550px) {
-  .skillsUsed li {
-    font-size: 0.4rem;
+  .projectsTextContainer p, .projectsTextContainer a {
+    font-size: 0.8rem;
+  }
+  .projectsTextContainer .skillsUsed li {
+    font-size: 0.5rem;
     letter-spacing: 0;
   }
 }
@@ -1036,12 +1072,12 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
   }
   .projectsFlexContainer .projectsImgContainer {
-    width: 70%;
+    width: 90%;
   }
   .contactTextContainer {
     margin-right: 50px;
@@ -1063,6 +1099,12 @@ footer p {
   }
   .submitBtn {
     font-size: 0.8rem;
+  }
+}
+@media (max-width: 550px) {
+  .backToTop {
+    margin-left: 150px;
+    margin-right: 150px;
   }
 }
 @media (max-width: 400px) {

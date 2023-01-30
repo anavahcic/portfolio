@@ -1,10 +1,12 @@
 @use "./variables" as var;
 
 // Media Queries Styles
-@media (max-width: 1100px) {
+@media (max-width: 950px) {
     header {
-        // background: var.$lightPurple;
         height: fit-content;
+        h1 {
+            font-size: 4rem;
+        }
     }
     // Desktop Navigation
     .mainNav {
@@ -70,6 +72,9 @@
          width: 100%;
      }
     }
+    .skills {
+        padding: 50px 0 50px 0;
+    }
     .contactTextContainer {
      margin-right: 50px;
     }
@@ -87,6 +92,7 @@
     }
     .aboutMeBio {
         text-align: center;
+        margin: 0 auto;
     }
     h2 {
         text-align: center;
@@ -97,20 +103,32 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 5px solid var.$black;
-        border-radius: 10px;
         margin: 20px 0;
         width: fit-content;
     }
     .projectsImgContainer {
         width: 70%;
     }
+    .contactFlexContainer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contactTextContainer {
+        margin: 0 auto;
+    }
+    .contact h2 {
+        margin-bottom: 100px;
+    }
+    .backToTop {
+        margin-left: 350px;
+        margin-right: 350px;
+    }
   
 }
 
-@media (max-width: 950px) {
-    .skills {
-        padding: 50px 0 50px 0;
+@media (max-width: 860px) {
+    .typeContainer {
+        display: none;
     }
 }
 
@@ -124,8 +142,8 @@
     }
     .contactFlexContainer {
     display: flex;
-    flex-direction: column;
-    padding: 100px 50px;
+    flex-direction: column-reverse;
+    padding: 50px;
     }
     .contactTextContainer {
         width: 100%;
@@ -135,6 +153,10 @@
     .contactInfo {
         padding: 30px;
         margin-left: 100px;
+    }
+    .backToTop {
+        margin-left: 260px;
+        margin-right: 260px;
     }
 }
 
@@ -168,7 +190,10 @@
     flex-direction: column;
     align-items: center;
     .projectsImgContainer {
-        width: 70%;
+        width: 90%;
+    }
+    .projectsTextContainer h3 {
+        font-size: 1.2rem;
     }
    }
    .contactTextContainer {
@@ -183,18 +208,21 @@
    .submitBtn {
     margin-bottom: 5px;
    }
+   .backToTop {
+    margin-left: 220px;
+    margin-right: 220px;
+   }
 }
 
 @media (max-width: 600px) {
+    .projectsTextContainer {
     .skillsUsed {
         li {
             font-size: 0.6rem;
             letter-spacing: 0;
         }
-        p {
-            font-size: 0.8rem;
-        }
     }
+}
     .contactInfo {
         padding: 30px;
         margin-left: 20px;
@@ -203,12 +231,18 @@
 }
 
 @media (max-width: 550px) {
+    .projectsTextContainer {
+        p, a {
+            font-size: 0.8rem;
+        }
     .skillsUsed {
         li {
-            font-size: 0.4rem;
+            font-size: 0.5rem;
             letter-spacing: 0;
         }
+       
     }
+}
 
 @media (max-width: 500px) {
     // Desktop Navigation
@@ -241,9 +275,9 @@
    }
    .projectsFlexContainer {
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     .projectsImgContainer {
-        width: 70%;
+        width: 90%;
     }
    }
    .contactTextContainer {
@@ -265,6 +299,10 @@
    .submitBtn {
     font-size: 0.8rem;
         }
+    }
+    .backToTop {
+        margin-left: 150px;
+        margin-right: 150px;
     }
 }
 
