@@ -28,14 +28,14 @@
     }
     .skillsUsed {
         li {
-            color: var.$purple;
+            color: var.$white;
             font-size: 0.8rem;
             margin: 0px 5px 0px 0px;
         }
     }
     .projectsLinks {
         li {
-            background-color: var.$yellow;
+            background-color: var.$orange;
             margin: 20px;
             padding: 10px;
             margin-left: 0;
@@ -43,14 +43,14 @@
             cursor: pointer;
             &:hover {
                 background-color: var.$white;
-                border: 2px solid var.$yellow;
+                border: 2px solid var.$orange;
             }
         }
     }
     a {
-        color: var.$blue;
+        color: var.$white;
         &:hover {
-            color: var.$yellow;
+            color: var.$orange;
         }
     }
     

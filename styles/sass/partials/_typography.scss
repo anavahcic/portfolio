@@ -2,6 +2,8 @@
 
 html {
     font-size: 125%;
+    background-color: var.$black;
+    
 }
 
 body,
@@ -19,7 +21,7 @@ p  {
     font-weight: 300;
     letter-spacing: 1px;
     line-height: 25px;
-    color: #2A3033;
+    color: var.$white;
 }
 
 h1, h2, h3  {

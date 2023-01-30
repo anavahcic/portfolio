@@ -1,7 +1,8 @@
 @use "./variables" as var;
 
 .headerNav {
-    background-color: var.$lightPurple;
+    background-color: var.$black;
+    color: var.$white;
     padding: 40px 0px;
 }
 
@@ -28,12 +29,12 @@
             }
         }
         .contactBtn {
-            background-color: var.$yellow;
+            background-color: var.$orange;
             color: var.$black;
             &:hover {
                 background: var.$white;
-                color: var.$yellow;
-                border: 2px solid var.$yellow;
+                color: var.$orange;
+                border: 2px solid var.$orange;
                 font-weight: bold;
                 letter-spacing: 3px;
             }
@@ -60,10 +61,10 @@
         justify-content: center;
         transition: 0.3s;
         &:hover {
-            color: var.$yellow;
+            color: var.$orange;
         }
         &:focus {
-            color: var.$yellow;
+            color: var.$orange;
         }
     }
 }
@@ -92,11 +93,11 @@
                 transition: 0.4s;
                 color: var.$black;
                 &:hover {
-                    color: var.$yellow;
+                    color: var.$orange;
                     font-weight: bold;
                 }
                  &:focus {
-                    color: var.$yellow;
+                    color: var.$orange;
                     font-weight: bold;
                 }
             }

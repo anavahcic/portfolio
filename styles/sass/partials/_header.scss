@@ -3,7 +3,7 @@
 // Header section styles
 header {
     height: 80vh;
-    background-color: var.$lightPurple;
+    background-color: var.$black;
     height: 100vh;
     position: relative;
     .wrapper {
@@ -46,7 +46,7 @@ header {
           left: 0;
           height: 100%;
           width: 100%;
-          background-color: var.$lightPurple;
+          background-color: var.$black;
           border-left: 2.5px solid var.$black;
           animation: animate 3s steps(12) infinite;
       }
