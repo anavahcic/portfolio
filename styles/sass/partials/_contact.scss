@@ -2,7 +2,7 @@
 
 // / Contact section styles
 .contact {
-    background-color: var.$lightPurple;
+    // background-color: var.$lightPurple;
 }
 .contactFlexContainer,
 .contactInfo {
@@ -31,7 +31,7 @@
         a {
         transition: color 0.5s;
         &:hover {
-            color: var.$yellow;
+            color: var.$orange;
             }
         }
     }
@@ -54,7 +54,7 @@ textarea {
 }
 
 .submitBtn {
-    background-color: var.$yellow;
+    background-color: var.$orange;
     text-align: center;
     margin-top: 20px;
     padding: 10px 20px;
@@ -63,7 +63,7 @@ textarea {
     cursor: pointer;
     &:hover {
         background-color: var.$white;
-        color: var.$yellow;
-        border: 2px solid var.$yellow;
+        color: var.$orange;
+        border: 2px solid var.$orange;
     }
 }
