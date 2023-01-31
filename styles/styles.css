@@ -729,13 +729,12 @@ textarea {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  margin-left: 530px;
-  margin-right: 530px;
+  margin: 0 auto;
   cursor: pointer;
 }
 .backToTop:hover {
   font-weight: bold;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 footer {
@@ -751,9 +750,7 @@ footer p {
 
 @media (max-width: 950px) {
   header {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 80vh;
   }
   header h1 {
     font-size: 4rem;
@@ -906,13 +903,16 @@ footer p {
     margin-bottom: 100px;
   }
   .backToTop {
-    margin-left: 350px;
-    margin-right: 350px;
+    font-size: 0.8rem;
   }
 }
 @media (max-width: 860px) {
   .typeContainer {
     display: none;
+  }
+  .textContainer {
+    padding: 100px;
+    margin-top: 50px;
   }
 }
 @media (max-width: 750px) {
@@ -941,10 +941,6 @@ footer p {
   .contactInfo {
     padding: 30px;
     margin-left: 100px;
-  }
-  .backToTop {
-    margin-left: 260px;
-    margin-right: 260px;
   }
 }
 @media (max-width: 650px) {
@@ -1006,10 +1002,6 @@ footer p {
   }
   .submitBtn {
     margin-bottom: 5px;
-  }
-  .backToTop {
-    margin-left: 220px;
-    margin-right: 220px;
   }
 }
 @media (max-width: 600px) {
@@ -1101,10 +1093,15 @@ footer p {
     font-size: 0.8rem;
   }
 }
-@media (max-width: 550px) {
-  .backToTop {
-    margin-left: 150px;
-    margin-right: 150px;
+@media (max-width: 450px) {
+  .textContainer h1 {
+    padding: 5px;
+    font-size: 3rem;
+    line-height: 2.5rem;
+    text-align: center;
+  }
+  h2 {
+    line-height: 2.5rem;
   }
 }
 @media (max-width: 400px) {
@@ -1120,5 +1117,14 @@ footer p {
   }
   .submitBtn {
     margin: 30px 40px;
+  }
+}
+@media (max-width: 350px) {
+  .skills li {
+    margin: 0 auto;
+  }
+  h2 {
+    font-size: 2rem;
+    line-height: 3rem;
   }
 }

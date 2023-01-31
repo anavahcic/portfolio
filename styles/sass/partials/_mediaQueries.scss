@@ -3,7 +3,7 @@
 // Media Queries Styles
 @media (max-width: 950px) {
     header {
-        height: fit-content;
+        height: 80vh;
         h1 {
             font-size: 4rem;
         }
@@ -120,15 +120,18 @@
         margin-bottom: 100px;
     }
     .backToTop {
-        margin-left: 350px;
-        margin-right: 350px;
+        font-size: 0.8rem;
     }
   
 }
 
 @media (max-width: 860px) {
     .typeContainer {
-        display: none;
+        display: none; 
+    }
+    .textContainer {
+        padding: 100px;
+        margin-top: 50px;
     }
 }
 
@@ -153,10 +156,6 @@
     .contactInfo {
         padding: 30px;
         margin-left: 100px;
-    }
-    .backToTop {
-        margin-left: 260px;
-        margin-right: 260px;
     }
 }
 
@@ -207,10 +206,6 @@
    }
    .submitBtn {
     margin-bottom: 5px;
-   }
-   .backToTop {
-    margin-left: 220px;
-    margin-right: 220px;
    }
 }
 
@@ -300,9 +295,19 @@
     font-size: 0.8rem;
         }
     }
-    .backToTop {
-        margin-left: 150px;
-        margin-right: 150px;
+}
+
+@media (max-width:450px) {
+    .textContainer {
+        h1 {
+        padding: 5px;
+        font-size: 3rem;
+        line-height: 2.5rem;
+        text-align: center;
+        }
+    }
+    h2 {
+        line-height: 2.5rem;
     }
 }
 
@@ -319,5 +324,17 @@
     }
     .submitBtn {
         margin: 30px 40px;
+    }
+}
+
+@media (max-width: 350px) {
+    .skills {
+        li {
+            margin: 0 auto;
+        }
+    }
+    h2 {
+        font-size: 2rem;
+        line-height: 3rem;
     }
 }
