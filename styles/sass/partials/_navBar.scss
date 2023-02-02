@@ -22,6 +22,7 @@
             text-align: center;
             border-radius: 0.25em;
             border: 2px solid transparent;
+            color: var.$white;
             &:hover {
                 border: 2px solid var.$orange;
                 font-weight: bold;
