@@ -3,7 +3,7 @@
 // Header section styles
 header {
     height: 80vh;
-    background-color: var.$black;
+    // background-color: var.$black;
     height: 100vh;
     position: relative;
     .wrapper {
@@ -27,7 +27,6 @@ header {
           text-decoration: underline var.$orange 5px;
         }
     }
-
 }
 
 .typeContainer {
@@ -63,14 +62,6 @@ header {
     }
   }
 
-//   #icon {
-//     width: 30px;
-//     cursor: pointer;
-//     position: fixed;
-//     left: 1%;
-//     top: 1%;
-//     z-index: 10000;
-// }
 
 
 

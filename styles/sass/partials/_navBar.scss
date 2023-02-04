@@ -1,5 +1,6 @@
 @use "./variables" as var;
 
+// Desktop Nav
 .headerNav {
     background-color: var.$black;
     color: var.$white;
@@ -42,6 +43,49 @@
         }
     }
 }
+// Dark Mode Toggle
+.switchLight {
+    .checkbox {
+      opacity: 0;
+      position: absolute;
+    }
+    .label {
+      background-color: var.$black;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      box-sizing: border-box;
+      border-radius: 50px;
+      border: 1px solid var.$white;
+      position: relative;
+      padding: 2px;
+      height: 26px;
+      width: 70px;
+      transform: scale(1.5);
+      cursor: pointer;
+    }
+    .ball {
+      background-color: var.$white;
+      border-radius: 50%;
+      position:absolute;
+      width: 24px;
+      height: 24px;
+      top: 0;
+      left: 0;
+      transition: transform 0.2s linear;
+    }
+    .checkbox:checked + .label .ball {
+      transform: translate(44px);
+    }
+    .fa-moon {
+      color: var.$yellow;
+    }
+    .fa-sun {
+      color: var.$red;
+    }
+
+  }
 
 // Hamburger Nav
 

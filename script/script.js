@@ -40,24 +40,21 @@ portfolio.typeWriter = () => {
 };
 
 //Toggle nightmode and daymode
-// portfolio.nightMode = () => {
-//     const icon = document.getElementById("icon");
-//     const body = document.querySelector("body");
-//     icon.onclick = () => {
-//         body.classList.toggle("nightMode");
-//         if (document.body.classList.contains("nightMode")){
-//             icon.src = "assets/lightMode.png"
-//         } else {
-//             icon.src = "assets/darkMode.png"
-//         }
-//     }
-// }
+portfolio.lightMode = () => {
+    const checkbox = document.getElementById('checkbox');
+
+    checkbox.addEventListener('click', () => {
+        // change the theme of the website
+        document.body.classList.toggle('light');
+    })
+}
+
 
 //init function
 portfolio.init = () => {
     portfolio.hamNavToggle();
     portfolio.typeWriter();
-    portfolio.nightMode();
+    portfolio.lightMode();
 }
 
 portfolio.init();
