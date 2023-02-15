@@ -766,6 +766,7 @@ header .textContainer h2 {
 }
 .projectsTextContainer .projectsLinks li {
   background-color: #FFAC41;
+  color: #F8F8F8;
   margin: 20px;
   padding: 10px;
   margin-left: 0;
@@ -774,13 +775,8 @@ header .textContainer h2 {
 }
 .projectsTextContainer .projectsLinks li:hover {
   background-color: #F8F8F8;
-  border: 2px solid #FFAC41;
-}
-.projectsTextContainer a {
-  color: #F8F8F8;
-}
-.projectsTextContainer a:hover {
   color: #FFAC41;
+  border: 2px solid #FFAC41;
 }
 
 .contact {

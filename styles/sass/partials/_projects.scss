@@ -40,6 +40,7 @@
     .projectsLinks {
         li {
             background-color: var.$orange;
+            color: var.$white;
             margin: 20px;
             padding: 10px;
             margin-left: 0;
@@ -47,15 +48,16 @@
             cursor: pointer;
             &:hover {
                 background-color: var.$white;
+                color: var.$orange;
                 border: 2px solid var.$orange;
             }
         }
     }
-    a {
-        color: var.$white;
-        &:hover {
-            color: var.$orange;
-        }
-    }
+    // a {
+    //     color: var.$white;
+    //     &:hover {
+    //         color: var.$orange;
+    //     }
+    // }
     
 }
