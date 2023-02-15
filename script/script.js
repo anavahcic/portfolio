@@ -40,14 +40,14 @@ portfolio.typeWriter = () => {
 };
 
 //Toggle nightmode and daymode
-portfolio.lightMode = () => {
-    const checkbox = document.getElementById('checkbox');
+// portfolio.lightMode = () => {
+//     const checkbox = document.getElementById('checkbox');
 
-    checkbox.addEventListener('click', () => {
-        // change the theme of the website
-        document.body.classList.toggle('light');
-    })
-}
+//     checkbox.addEventListener('click', () => {
+//         // change the theme of the website
+//         document.body.classList.toggle('light');
+//     })
+// }
 
 // Reference: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 // Get the button:

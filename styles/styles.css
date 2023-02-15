@@ -344,61 +344,6 @@ img {
   font-weight: bold;
 }
 
-.switchLight .checkbox {
-  opacity: 0;
-  position: absolute;
-}
-.switchLight .label {
-  background-color: #000000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 50px;
-  border: 1px solid #F8F8F8;
-  position: relative;
-  padding: 2px;
-  height: 26px;
-  width: 70px;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  cursor: pointer;
-}
-.switchLight .ball {
-  background-color: #F8F8F8;
-  border-radius: 50%;
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 0;
-  left: 0;
-  -webkit-transition: -webkit-transform 0.2s linear;
-  transition: -webkit-transform 0.2s linear;
-  transition: transform 0.2s linear;
-  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
-}
-.switchLight .checkbox:checked + .label .ball {
-  -webkit-transform: translate(44px);
-          transform: translate(44px);
-}
-.switchLight .fa-moon {
-  color: #ffc100;
-}
-.switchLight .fa-sun {
-  color: #ff7400;
-}
-
 .toggler {
   /* ALWAYS KEEPING THE TOGGLER OR THE CHECKBOX ON TOP OF EVERYTHING :  */
   z-index: 2;
