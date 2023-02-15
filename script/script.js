@@ -50,6 +50,9 @@ portfolio.lightMode = () => {
 }
 
 
+
+
+
 //init function
 portfolio.init = () => {
     portfolio.hamNavToggle();
