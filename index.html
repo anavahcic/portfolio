@@ -23,7 +23,7 @@
     <title>Ana Vahcic</title>
 </head>
 
-<body>
+<body class="light">
     <!-- Navigation Bar -->
     <nav class="headerNav">
         <div class="wrapper">
@@ -36,9 +36,20 @@
                     <li><a class="contactBtn" href="#contact" aria-label="go to contact section">get in touch</a></li>
                 </ul>
             </div><!-- END .mainNav -->
+
+            <div class="switchLight">
+                <input type="checkbox" class="checkbox" id="checkbox">
+            
+                <label for="checkbox" class="label">
+                    <i class="fas fa-moon"></i>  
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>               
+                </label>
+            </div><!-- END .switchLight -->
         </div> <!-- END .wrapper -->
     </nav><!-- END .headerNav -->
 
+    
     <!-- Hamburger Nav -->
     <nav class="hamNavIcon">
         <div class="toggle">
@@ -114,27 +125,6 @@
                 <h2>projects</h2>
                 <div class="projectsFlexContainer">
                     <div class="projectsImgContainer">
-                        <img src="./assets/tech-daily-PGuCnUzsRSM-unsplash.jpg" alt="">
-                    </div><!-- END .projectsImgContainer -->
-                    <div class="projectsTextContainer">
-                        <h3>box office boffo</h3>
-                        <ul class="skillsUsed">
-                            <li>HTML |</li>
-                            <li>CSS |</li>
-                            <li>API |</li>
-                            <li>React |</li>
-                            <li>Firebase</li>
-                        </ul><!-- END .skillsUsed -->
-                        <p>Dive into the world of summer blockbuster movies. Choose a year and then rate them based on highest-grossing to lowest-grossing films. This was a group project in collaboration with <a href="https://aidendifonzo.com/" target="_blank">Aiden DiFonzo</a>, <a href="https://papaya-tartufo-d07be8.netlify.app/" target="_blank">Antonio Arredondo</a> and <a href="https://victorialange.com/" target="_blank">Victoria Lange</a>.</p>
-                        <ul class="projectsLinks">
-                            <li><a href="https://boxoffice-boffo.netlify.app/" target="_blank">view live</a></li>
-                            <li><a href="https://github.com/projectFourBoxOffice/boxOfficeBoffo" target="_blank">view code</a></li>
-                        </ul><!-- END .projectsLinks -->
-                    </div><!-- END .projectsTextContainer -->   
-                </div><!-- END .projectsFlexContainer -->
-
-                <div class="projectsFlexContainer">
-                    <div class="projectsImgContainer">
                         <img src="./assets/icons8-team-dhZtNlvNE8M-unsplash.jpg" alt=""> 
                     </div><!-- END .projectsImgContainer -->
                     <div class="projectsTextContainer">
@@ -154,6 +144,29 @@
                         </ul> <!-- END .projectsLinks -->
                     </div><!-- END .projectsTextContainer -->
                 </div><!-- END .projectsFlexContainer -->
+                
+                <div class="projectsFlexContainer">
+                    <div class="projectsImgContainer">
+                        <img src="./assets/tech-daily-PGuCnUzsRSM-unsplash.jpg" alt="">
+                    </div><!-- END .projectsImgContainer -->
+                    <div class="projectsTextContainer">
+                        <h3>box office boffo</h3>
+                        <ul class="skillsUsed">
+                            <li>HTML |</li>
+                            <li>CSS |</li>
+                            <li>API |</li>
+                            <li>React |</li>
+                            <li>Firebase</li>
+                        </ul><!-- END .skillsUsed -->
+                        <p>Dive into the world of summer blockbuster movies. Choose a year and then rate them based on highest-grossing to lowest-grossing films. This was a group project in collaboration with <a href="https://aidendifonzo.com/" target="_blank">Aiden DiFonzo</a>, <a href="https://papaya-tartufo-d07be8.netlify.app/" target="_blank">Antonio Arredondo</a> and <a href="https://victorialange.com/" target="_blank">Victoria Lange</a>.</p>
+                        <ul class="projectsLinks">
+                            <li><a href="https://boxoffice-boffo.netlify.app/" target="_blank">view live</a></li>
+                            <li><a href="https://github.com/projectFourBoxOffice/boxOfficeBoffo" target="_blank">view code</a></li>
+                        </ul><!-- END .projectsLinks -->
+                    </div><!-- END .projectsTextContainer -->   
+                </div><!-- END .projectsFlexContainer -->
+
+                
 
                 <div class="projectsFlexContainer">
                     <div class="projectsImgContainer">
@@ -246,7 +259,7 @@
                     </div><!-- END .contactTextContainer -->
                 </div><!-- END .contactFlexContainer -->
                 <div class="backToTop">
-                    <a class="backToTop" href="#header">back to top</a>
+                    <button onClick="topFunction()" id="myBtn" title="Go to top">top</button>
                 </div>
             </div><!-- END .wrapper -->
         </section><!-- END Contact Section -->

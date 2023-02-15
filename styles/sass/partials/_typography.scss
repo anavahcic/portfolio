@@ -2,9 +2,15 @@
 
 html {
     font-size: 125%;
-    background-color: var.$black;
-    
 }
+
+body {
+    overflow-x: hidden;
+    .light {
+        background-color: var.$white;
+    }
+}
+
 
 body,
 ul,
@@ -21,11 +27,11 @@ p  {
     font-weight: 300;
     letter-spacing: 1px;
     line-height: 25px;
-    color: var.$white;
+    background-color: var.$black;
+    color: var.$white; 
 }
 
 h1, h2, h3  {
-    font-family: var.$header;
     font-weight: 700;
     font-size: 5.8rem;
 }
@@ -43,7 +49,7 @@ ul {
     list-style: none;
     a {
         text-decoration: none;
-        color: #2A3033;
+        color: var.$white;
         &:visited,
         &:active {
             color: inherit;
