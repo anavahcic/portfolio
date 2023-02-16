@@ -1,14 +1,12 @@
-@use "./variables" as var;
+@use "./variables" as *;
 
 // Footer section styles
 footer {
-    height: 40px;
-    background-color: var.$black;
     p {
         text-align: center;
-        padding-top: 10px;
-        color: var.$white;
-        font-size: 0.8rem;
+        color: $pink;
+        font-size: 1rem;
+        font-weight: bolder;
     }
    
 }

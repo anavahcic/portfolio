@@ -1,4 +1,4 @@
-@use "./variables" as var;
+@use "./variables" as *;
 
 // Media Queries Styles
 @media (max-width: 950px) {
@@ -26,13 +26,13 @@
 
     #menuToggle a {
     text-decoration: none;
-    color: var.$black;
+    color: $black;
     transition: color 0.3s ease;
     }
 
 #menuToggle a:hover
 {
-  color: var.$orange;
+  color: $pink;
 }
 
 
@@ -65,7 +65,7 @@
   margin-bottom: 5px;
   position: relative;
   
-  background: var.$white;
+  background: $white;
   border-radius: 3px;
   
   z-index: 1;
@@ -95,7 +95,7 @@
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: var.$black;
+  background: $black;
 }
 
 /*
@@ -127,7 +127,7 @@
   padding: 50px;
   padding-top: 125px;
   
-  background: var.$white;
+  background: $white;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */

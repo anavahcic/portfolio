@@ -1,0 +1,30 @@
+@use "./variables" as *;
+
+.wrapper {
+    max-width: 1260px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}    
+
+button {
+    color: $white;
+    background-color: $pink;
+    padding: 18px 36px;
+    border: 2px solid $pink;
+    font-size: 0.8rem;
+    font-weight: bold;
+    line-height: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        background-attachment: transparent;
+        color: $pink;
+    }
+}
