@@ -1,11 +1,14 @@
-@use "./variables" as var;
+@use "./variables" as *;
 
 // / Contact section styles
 .contact {
+    background-color: $darkGreen;
+    color: $white;
     padding: 100px 0;
     h2 {
+        color: $white;
         text-align: center;
-        text-decoration: underline var.$orange 5px;
+        text-decoration: underline $pink 5px;
         margin-bottom: 150px;
         font-size: 2.6rem;
     }
@@ -19,7 +22,7 @@
 .contactTextContainer {
     width:40%;
     text-align: left;
-    margin-right: 20px;
+    margin-left: 100px;
     margin-top: 100px;
 }
 .contactInfo {
@@ -31,7 +34,7 @@
         a {
         transition: color 0.5s;
         &:hover {
-            color: var.$orange;
+            color: $pink;
             }
         }
     }
@@ -50,11 +53,12 @@ label {
 input,
 textarea {
     width: 100%;
-    border: 1px solid var.$white;
+    border: 1px solid $white;
 }
 
 .submitBtn {
-    background-color: var.$orange;
+    background-color: $pink;
+    font-family: $bodyFont;
     text-align: center;
     margin-top: 20px;
     padding: 10px 20px;
@@ -62,24 +66,16 @@ textarea {
     border-radius: 5px;
     cursor: pointer;
     &:hover {
-        background-color: var.$white;
-        color: var.$orange;
-        border: 2px solid var.$orange;
+        background-color: $white;
+        color: $pink;
+        border: 2px solid $pink;
     }
 }
 
-// .backToTop {
-//     color: var.$white;
-//     text-transform: uppercase;
-//     text-decoration: none;
-//     text-align: center;
-//     margin: 0 auto;
-//     cursor: pointer;
-//     &:hover {
-//         font-weight: bold;
-//         letter-spacing: 2px;
-//         }
-//     }
+form {
+    margin-left: 100px;
+}
+
 
 #myBtn {
     display: none;
@@ -89,13 +85,14 @@ textarea {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: var.$orange;
-    color: var.$black;
+    background-color: $pink;
+    color: $white;
     cursor: pointer;
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 30px;
     &:hover {
-        background-color: var.$yellow;;
+        background-color: $lightPink;
+        color: $black;
     }
 }
