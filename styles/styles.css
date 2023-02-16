@@ -231,54 +231,77 @@ html {
 }
 
 body {
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  color: #14070E;
   overflow-x: hidden;
 }
-body .light {
-  background-color: #F8F8F8;
+
+h1, h2, h3, h4, h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #14070E;
+  margin: 0;
 }
 
-body,
-ul,
-h1,
-h2,
-h3,
-form,
-button,
-p {
-  margin: 0 auto;
-  padding: 0;
-  font-family: "Albert Sans", sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
-  letter-spacing: 1px;
-  line-height: 25px;
-  background-color: #000000;
-  color: #F8F8F8;
-}
-
-h1, h2, h3 {
-  font-weight: 700;
-  font-size: 5.8rem;
+h1 {
+  font-size: 4.5rem;
+  color: #F8F4F3;
+  text-transform: uppercase;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.6rem;
+  line-height: 2.4rem;
+  margin-bottom: 18px;
+  -webkit-text-decoration: underline #DB9999 5px;
+          text-decoration: underline #DB9999 5px;
 }
 
 h3 {
+  font-size: 1.7rem;
+  line-height: 2rem;
+  margin-bottom: 18px;
+}
+
+h4 {
   font-size: 1.4rem;
-  text-transform: uppercase;
+  line-height: 1.7rem;
+  color: #F8F4F3;
+  padding-bottom: 10px;
+  -webkit-text-decoration: underline #DB9999 5px;
+          text-decoration: underline #DB9999 5px;
+}
+
+h5 {
+  font-size: 0.7rem;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+ul, li, a, input {
+  padding: 0;
+  margin: 0;
 }
 
 ul {
   list-style: none;
 }
-ul a {
+
+a {
   text-decoration: none;
-  color: #F8F8F8;
-}
-ul a:visited, ul a:active {
   color: inherit;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wrapper {
+  max-width: 1260px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 img {
@@ -287,311 +310,56 @@ img {
   display: block;
 }
 
-.wrapper {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
-.headerNav {
-  background-color: #000000;
-  color: #F8F8F8;
-  padding: 40px 0px;
-}
-
-.mainNav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  float: right;
-}
-.mainNav .mainNavLinks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.mainNav .mainNavLinks li {
-  margin-left: 50px;
-}
-.mainNav .mainNavLinks a {
-  padding: 5px 10px;
+button {
+  color: #F8F4F3;
+  background-color: #DB9999;
+  padding: 18px 36px;
+  border: 2px solid #DB9999;
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 1.2rem;
   text-align: center;
-  border-radius: 0.25em;
-  border: 2px solid transparent;
-  color: #F8F8F8;
-}
-.mainNav .mainNavLinks a:hover {
-  border: 2px solid #FFAC41;
-  font-weight: bold;
-}
-.mainNav .mainNavLinks .contactBtn {
-  background-color: #FFAC41;
-  color: #000000;
-}
-.mainNav .mainNavLinks .contactBtn:hover {
-  background: #F8F8F8;
-  color: #FFAC41;
-  border: 2px solid #FFAC41;
-  font-weight: bold;
-}
-
-.toggler {
-  /* ALWAYS KEEPING THE TOGGLER OR THE CHECKBOX ON TOP OF EVERYTHING :  */
-  z-index: 2;
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  top: 0;
-  left: 0;
   cursor: pointer;
-  opacity: 0;
-}
-
-.hamburger {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 40px;
-  width: 40px;
-  padding: 0.6rem;
-  /* FOR DISPLAYING EVERY ELEMENT IN THE CENTER : */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-/* CREATING THE MIDDLE LINE OF THE HAMBURGER : */
-.hamburger > div {
-  position: relative;
-  top: 0;
-  left: 0;
-  background: white;
-  height: 2px;
-  width: 60%;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
-/* CREATING THE TOP AND BOTTOM LINES : 
-TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
-.hamburger > div::before,
-.hamburger > div::after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  background: white;
-  width: 100%;
-  height: 2px;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
-.hamburger > div::after {
-  top: 10px;
-}
-
-/* IF THE TOGGLER IS IN ITS CHECKED STATE, THEN SETTING THE BACKGROUND OF THE MIDDLE LAYER TO COMPLETE BLACK AND OPAQUE :  */
-.toggler:checked + .hamburger > div {
-  background: rgba(0, 0, 0, 0);
-}
-
-.toggler:checked + .hamburger > div::before {
-  top: 0;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  background: black;
-}
-
-/* AND ROTATING THE TOP AND BOTTOM LINES :  */
-.toggler:checked + .hamburger > div::after {
-  top: 0;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-  background: black;
-}
-
-/* MAIN MENU WITH THE WHITE BACKGROUND AND THE TEXT :  */
-.menu {
-  background: white;
-  width: 0%;
-  height: 100vh;
-  /* APPLYING TRANSITION TO THE MENU :  */
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
-/* IF THE TOGGLER IS CHECKED, THEN INCREASE THE WIDTH OF THE MENU TO 30% , CREATING A SMOOTH EFFECT :  */
-.toggler:checked ~ .menu {
-  width: 30%;
-}
-
-/* STYLING THE LIST :  */
-.menu > div > ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: fixed;
-  top: 70px;
-  padding-left: 10px;
-  /* HIDDEN INITIALLY  :  */
-  visibility: hidden;
-}
-
-.menu > div > ul > li {
-  list-style: none;
-  padding: 0.5rem;
-}
-
-.menu > div > ul > li > a {
-  color: black;
-  text-decoration: none;
-  font-size: 2rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* WHEN THE TOGGLER IS CHECKED, CHANGE THE VISIBILITY TO VISIBLE :  */
-.toggler:checked ~ .menu > div > ul {
-  -webkit-transition: visibility 0.4s ease;
-  transition: visibility 0.4s ease;
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
-  visibility: visible;
-}
-
-.toggler:checked ~ .menu > div > ul > li > a:hover {
-  color: orange;
-}
-
-.hamNavIcon {
-  display: none;
-  position: fixed;
-  right: 0;
-  top: 0;
-  padding: 2%;
-  cursor: pointer;
-  z-index: 100;
-  font-size: 2rem;
-}
-.hamNavIcon .toggle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.hamNavIcon .toggle:hover {
-  color: #FFAC41;
-}
-.hamNavIcon .toggle:focus {
-  color: #FFAC41;
+button:hover {
+  background-attachment: transparent;
+  color: #DB9999;
 }
 
-.hamNav {
-  display: none;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  background-color: #F8F8F8;
-  height: 100vh;
-  width: 80vw;
-  position: fixed;
-  top: 0;
-  right: -80vw;
-  z-index: 10;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  overflow: hidden;
-}
-.hamNav ul {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-top: 50px;
-}
-.hamNav ul li {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 10px;
-}
-.hamNav ul li a {
-  font-size: 2.8rem;
-  line-height: 85px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  color: #000000;
-}
-.hamNav ul li a:hover {
-  color: #FFAC41;
-  font-weight: bold;
-}
-.hamNav ul li a:focus {
-  color: #FFAC41;
-  font-weight: bold;
-}
-.hamNav.openNav {
-  height: 100%;
-  -webkit-transform: translateX(-80vw);
-          transform: translateX(-80vw);
-}
-
-.hamNavIcon {
-  color: #F8F8F8;
-}
-
-header {
-  height: 80vh;
-  height: 100vh;
-  position: relative;
-}
-header .wrapper {
+.navMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.navMenu li {
+  color: #F8F4F3;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+.navMenu li:hover {
+  -webkit-text-decoration: underline 5px #DB9999;
+          text-decoration: underline 5px #DB9999;
+}
+
+header {
+  background-image: url(../assets/pexels-igor-haritanovich-1687341.jpg);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
 }
 header .textContainer {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  text-align: left;
-  padding-left: 100px;
-  position: absolute;
+  text-align: center;
+  margin-top: 20%;
   bottom: 50%;
-  z-index: 10;
-}
-header .textContainer h1 {
-  margin: 0 auto;
-  padding-top: 50px;
-  padding-bottom: 80px;
-}
-header .textContainer h2 {
-  padding-bottom: 10px;
-  -webkit-text-decoration: underline #FFAC41 5px;
-          text-decoration: underline #FFAC41 5px;
 }
 
 .typeContainer .text {
@@ -605,8 +373,8 @@ header .textContainer h2 {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #000000;
-  border-left: 2.5px solid #000000;
+  background-color: #DB9999;
+  border-left: 2.5px solid #14070E;
   -webkit-animation: animate 3s steps(12) infinite;
           animation: animate 3s steps(12) infinite;
   overflow: hidden;
@@ -648,6 +416,7 @@ header .textContainer h2 {
 .headshotImgContainer img {
   border-radius: 50%;
   width: 100%;
+  border: 5px solid #365C46;
 }
 
 .aboutMeBio {
@@ -655,27 +424,15 @@ header .textContainer h2 {
   padding: 40px 50px;
   margin-left: 200px;
 }
-.aboutMeBio h2 {
-  margin-bottom: 10px;
-  margin-bottom: 40px;
-  font-size: 2.6rem;
-  font-family: "Albert Sans", sans-serif;
-  -webkit-text-decoration: underline #FFAC41 5px;
-          text-decoration: underline #FFAC41 5px;
-}
-.aboutMeBio p {
-  font-family: "Albert Sans", sans-serif;
-}
 
 .skills {
+  background-color: #365C46;
   padding: 100px;
 }
 .skills h2 {
   text-align: center;
   margin-bottom: 100px;
-  font-size: 2.6rem;
-  -webkit-text-decoration: underline #FFAC41 5px;
-          text-decoration: underline #FFAC41 5px;
+  color: #F8F4F3;
 }
 .skills ul {
   list-style: none;
@@ -708,16 +465,22 @@ header .textContainer h2 {
   min-width: 125px;
   padding: 25px;
   text-transform: uppercase;
+  color: #F8F4F3;
+}
+.skills ul li:hover {
+  color: #DB9999;
 }
 .skills ul li i {
   font-size: 80px;
   padding-bottom: 20px;
+  color: #F8F4F3;
 }
 .skills ul li:hover i {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  color: #DB9999;
 }
 
 .projects {
@@ -728,8 +491,8 @@ header .textContainer h2 {
   margin-bottom: 100px;
   font-size: 2.6rem;
   text-align: center;
-  -webkit-text-decoration: underline #FFAC41 5px;
-          text-decoration: underline #FFAC41 5px;
+  -webkit-text-decoration: underline #DB9999 5px;
+          text-decoration: underline #DB9999 5px;
 }
 
 .projectsFlexContainer {
@@ -760,13 +523,13 @@ header .textContainer h2 {
   display: flex;
 }
 .projectsTextContainer .skillsUsed li {
-  color: #F8F8F8;
+  color: #365C46;
   font-size: 0.8rem;
   margin: 0px 5px 0px 0px;
 }
 .projectsTextContainer .projectsLinks li {
-  background-color: #FFAC41;
-  color: #F8F8F8;
+  background-color: #DB9999;
+  color: #F8F4F3;
   margin: 20px;
   padding: 10px;
   margin-left: 0;
@@ -774,18 +537,21 @@ header .textContainer h2 {
   cursor: pointer;
 }
 .projectsTextContainer .projectsLinks li:hover {
-  background-color: #F8F8F8;
-  color: #FFAC41;
-  border: 2px solid #FFAC41;
+  background-color: #F8F4F3;
+  color: #DB9999;
+  border: 2px solid #DB9999;
 }
 
 .contact {
+  background-color: #365C46;
+  color: #F8F4F3;
   padding: 100px 0;
 }
 .contact h2 {
+  color: #F8F4F3;
   text-align: center;
-  -webkit-text-decoration: underline #FFAC41 5px;
-          text-decoration: underline #FFAC41 5px;
+  -webkit-text-decoration: underline #DB9999 5px;
+          text-decoration: underline #DB9999 5px;
   margin-bottom: 150px;
   font-size: 2.6rem;
 }
@@ -801,7 +567,7 @@ header .textContainer h2 {
 .contactTextContainer {
   width: 40%;
   text-align: left;
-  margin-right: 20px;
+  margin-left: 100px;
   margin-top: 100px;
 }
 
@@ -822,7 +588,7 @@ header .textContainer h2 {
   transition: color 0.5s;
 }
 .contactInfo li a:hover {
-  color: #FFAC41;
+  color: #DB9999;
 }
 
 label,
@@ -844,11 +610,12 @@ label {
 input,
 textarea {
   width: 100%;
-  border: 1px solid #F8F8F8;
+  border: 1px solid #F8F4F3;
 }
 
 .submitBtn {
-  background-color: #FFAC41;
+  background-color: #DB9999;
+  font-family: "Lora", serif;
   text-align: center;
   margin-top: 20px;
   padding: 10px 20px;
@@ -857,9 +624,13 @@ textarea {
   cursor: pointer;
 }
 .submitBtn:hover {
-  background-color: #F8F8F8;
-  color: #FFAC41;
-  border: 2px solid #FFAC41;
+  background-color: #F8F4F3;
+  color: #DB9999;
+  border: 2px solid #DB9999;
+}
+
+form {
+  margin-left: 100px;
 }
 
 #myBtn {
@@ -870,26 +641,23 @@ textarea {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #FFAC41;
-  color: #000000;
+  background-color: #DB9999;
+  color: #F8F4F3;
   cursor: pointer;
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 30px;
 }
 #myBtn:hover {
-  background-color: #ffc100;
+  background-color: #F7E4DC;
+  color: #14070E;
 }
 
-footer {
-  height: 40px;
-  background-color: #000000;
-}
 footer p {
   text-align: center;
-  padding-top: 10px;
-  color: #F8F8F8;
-  font-size: 0.8rem;
+  color: #DB9999;
+  font-size: 1rem;
+  font-weight: bolder;
 }
 
 @media (max-width: 950px) {
@@ -915,12 +683,12 @@ footer p {
   }
   #menuToggle a {
     text-decoration: none;
-    color: #000000;
+    color: #14070E;
     -webkit-transition: color 0.3s ease;
     transition: color 0.3s ease;
   }
   #menuToggle a:hover {
-    color: #FFAC41;
+    color: #DB9999;
   }
   #menuToggle input {
     display: block;
@@ -944,7 +712,7 @@ footer p {
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-    background: #F8F8F8;
+    background: #F8F4F3;
     border-radius: 3px;
     z-index: 1;
     -webkit-transform-origin: 4px 0px;
@@ -970,7 +738,7 @@ footer p {
     opacity: 1;
     -webkit-transform: rotate(45deg) translate(-2px, -1px);
             transform: rotate(45deg) translate(-2px, -1px);
-    background: #000000;
+    background: #14070E;
   }
   /*
    * But let's hide the middle one.
@@ -997,7 +765,7 @@ footer p {
     margin: -100px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;
-    background: #F8F8F8;
+    background: #F8F4F3;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
