@@ -1,157 +1,22 @@
 @use "./variables" as *;
 
 // Media Queries Styles
-@media (max-width: 950px) {
-    header {
-        height: 80vh;
-        h1 {
-            font-size: 4rem;
+@media (max-width: 1100px) {
+    .aboutFlexContainer {
+        flex-direction: column;
+        align-items: center;
+        .headshotImgContainer {
+            width: 100%;
         }
-    }
-    // Desktop Navigation
-    .mainNav {
-        display: none;
-    }
-    // Mobile Navigation
-    #menuToggle {
-    display: block;
-    position: relative;
-    top: 50px;
-    right: 50px;
-    z-index: 1;
-  
-  -webkit-user-select: none;
-  user-select: none;
-    }
-
-    #menuToggle a {
-    text-decoration: none;
-    color: $black;
-    transition: color 0.3s ease;
-    }
-
-#menuToggle a:hover
-{
-  color: $pink;
-}
-
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  right: 0px;
-  
-  cursor: pointer;
-  
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  
-  -webkit-touch-callout: none;
-}
-
-/*
- * Just a quick hamburger
- */
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  
-  background: $white;
-  border-radius: 3px;
-  
-  z-index: 1;
-  
-  transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: $black;
-}
-
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  
-  background: $white;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li
-{
-  padding: 10px 0;
-  font-size: 22px;
-}
-
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked ~ ul
-{
-  transform: none;
-}
-    // About me section
+        .aboutMeBio {
+            width: fit-content;
+            align-items:center;
+            p {
+                font-size: 0.9rem;
+            }
+        }
+       }
+       // About me section
     .headshotImgContainer {
         margin: 0 auto;
       
@@ -163,7 +28,8 @@
     h2 {
         text-align: center;
     }
-
+}
+@media (max-width: 950px) {
     // Projects section
     .projectsFlexContainer {
         display: flex;
@@ -191,16 +57,6 @@
   
 }
 
-@media (max-width: 860px) {
-    .typeContainer {
-        display: none; 
-    }
-    .textContainer {
-        padding: 100px;
-        margin-top: 50px;
-    }
-}
-
 @media (max-width: 750px) {
     .aboutMeBio {
         width: 90%;
@@ -226,28 +82,7 @@
 }
 
 @media (max-width: 650px) {
-    // Desktop Navigation
-    .topNav {
-        display: none;
-    }
-    // Mobile Navigation
-    .hamNav {
-        display: block;
-    }
-   .aboutFlexContainer {
-    flex-direction: column;
-    align-items: center;
-    .headshotImgContainer {
-        width: 100%;
-    }
-    .aboutMeBio {
-        width: fit-content;
-        align-items:center;
-        p {
-            font-size: 0.9rem;
-        }
-    }
-   }
+   
    .skills ul li i {
     font-size: 50px;
     }
@@ -306,17 +141,6 @@
 }
 
 @media (max-width: 500px) {
-    // Desktop Navigation
-    .topNav {
-        display: none;
-    }
-    // Mobile Navigation
-    .mobileNav {
-        display: block;
-    }
-    .hamNavIcon {
-        display: block;
-    }
    .aboutFlexContainer {
     flex-direction: column;
     align-items: center;
@@ -393,14 +217,43 @@
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
+    header {
+        height: 80vh;
+    }
+    .textContainer {
+        h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+        margin-bottom: 80px;
+        }
+        h2 {
+        font-size: 2rem;
+        line-height: 3rem;
+        }
+    }
     .skills {
         li {
             margin: 0 auto;
         }
     }
-    h2 {
-        font-size: 2rem;
-        line-height: 3rem;
+    .contact {
+        padding: 0;
+        h2 {
+            margin: 0;
+            padding-top: 20px;
+        }
+    }
+    .contactTextContainer {
+
+    }
+    form {
+        margin-top: 50px;
+        margin-left: 0;
+    }
+    #myBtn {
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 15px;
     }
 }

@@ -660,134 +660,29 @@ footer p {
   font-weight: bolder;
 }
 
-@media (max-width: 950px) {
-  header {
-    height: 80vh;
+@media (max-width: 1100px) {
+  .aboutFlexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  header h1 {
-    font-size: 4rem;
+  .aboutFlexContainer .headshotImgContainer {
+    width: 100%;
   }
-  .mainNav {
-    display: none;
+  .aboutFlexContainer .aboutMeBio {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  #menuToggle {
-    display: block;
-    position: relative;
-    top: 50px;
-    right: 50px;
-    z-index: 1;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-     -ms-user-select: none;
-         user-select: none;
-  }
-  #menuToggle a {
-    text-decoration: none;
-    color: #14070E;
-    -webkit-transition: color 0.3s ease;
-    transition: color 0.3s ease;
-  }
-  #menuToggle a:hover {
-    color: #DB9999;
-  }
-  #menuToggle input {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
-    right: 0px;
-    cursor: pointer;
-    opacity: 0; /* hide this */
-    z-index: 2; /* and place it over the hamburger */
-    -webkit-touch-callout: none;
-  }
-  /*
-   * Just a quick hamburger
-   */
-  #menuToggle span {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    background: #F8F4F3;
-    border-radius: 3px;
-    z-index: 1;
-    -webkit-transform-origin: 4px 0px;
-            transform-origin: 4px 0px;
-    -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  }
-  #menuToggle span:first-child {
-    -webkit-transform-origin: 0% 0%;
-            transform-origin: 0% 0%;
-  }
-  #menuToggle span:nth-last-child(2) {
-    -webkit-transform-origin: 0% 100%;
-            transform-origin: 0% 100%;
-  }
-  /* 
-   * Transform all the slices of hamburger
-   * into a crossmark.
-   */
-  #menuToggle input:checked ~ span {
-    opacity: 1;
-    -webkit-transform: rotate(45deg) translate(-2px, -1px);
-            transform: rotate(45deg) translate(-2px, -1px);
-    background: #14070E;
-  }
-  /*
-   * But let's hide the middle one.
-   */
-  #menuToggle input:checked ~ span:nth-last-child(3) {
-    opacity: 0;
-    -webkit-transform: rotate(0deg) scale(0.2, 0.2);
-            transform: rotate(0deg) scale(0.2, 0.2);
-  }
-  /*
-   * Ohyeah and the last one should go the other direction
-   */
-  #menuToggle input:checked ~ span:nth-last-child(2) {
-    -webkit-transform: rotate(-45deg) translate(0, -1px);
-            transform: rotate(-45deg) translate(0, -1px);
-  }
-  /*
-   * Make this absolute positioned
-   * at the top left of the screen
-   */
-  #menu {
-    position: absolute;
-    width: 300px;
-    margin: -100px 0 0 -50px;
-    padding: 50px;
-    padding-top: 125px;
-    background: #F8F4F3;
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
-    -webkit-transform-origin: 0% 0%;
-            transform-origin: 0% 0%;
-    -webkit-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
-    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  }
-  #menu li {
-    padding: 10px 0;
-    font-size: 22px;
-  }
-  /*
-   * And let's slide it in from the left
-   */
-  #menuToggle input:checked ~ ul {
-    -webkit-transform: none;
-            transform: none;
+  .aboutFlexContainer .aboutMeBio p {
+    font-size: 0.9rem;
   }
   .headshotImgContainer {
     margin: 0 auto;
@@ -799,6 +694,8 @@ footer p {
   h2 {
     text-align: center;
   }
+}
+@media (max-width: 950px) {
   .projectsFlexContainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -837,15 +734,6 @@ footer p {
     font-size: 0.8rem;
   }
 }
-@media (max-width: 860px) {
-  .typeContainer {
-    display: none;
-  }
-  .textContainer {
-    padding: 100px;
-    margin-top: 50px;
-  }
-}
 @media (max-width: 750px) {
   .aboutMeBio {
     width: 90%;
@@ -875,35 +763,6 @@ footer p {
   }
 }
 @media (max-width: 650px) {
-  .topNav {
-    display: none;
-  }
-  .hamNav {
-    display: block;
-  }
-  .aboutFlexContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .aboutFlexContainer .headshotImgContainer {
-    width: 100%;
-  }
-  .aboutFlexContainer .aboutMeBio {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .aboutFlexContainer .aboutMeBio p {
-    font-size: 0.9rem;
-  }
   .skills ul li i {
     font-size: 50px;
   }
@@ -955,15 +814,6 @@ footer p {
   }
 }
 @media (max-width: 550px) and (max-width: 500px) {
-  .topNav {
-    display: none;
-  }
-  .mobileNav {
-    display: block;
-  }
-  .hamNavIcon {
-    display: block;
-  }
   .aboutFlexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1050,12 +900,36 @@ footer p {
     margin: 30px 40px;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 375px) {
+  header {
+    height: 80vh;
+  }
+  .textContainer h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-bottom: 80px;
+  }
+  .textContainer h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
   .skills li {
     margin: 0 auto;
   }
-  h2 {
-    font-size: 2rem;
-    line-height: 3rem;
+  .contact {
+    padding: 0;
+  }
+  .contact h2 {
+    margin: 0;
+    padding-top: 20px;
+  }
+  form {
+    margin-top: 50px;
+    margin-left: 0;
+  }
+  #myBtn {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
   }
 }
