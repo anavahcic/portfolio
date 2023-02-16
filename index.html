@@ -8,7 +8,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Roboto:wght@700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/323dbf2a01.js" crossorigin="anonymous"></script>
@@ -23,63 +23,23 @@
     <title>Ana Vahcic</title>
 </head>
 
-<body class="light">
-    <!-- Navigation Bar -->
-    <nav class="headerNav">
-        <div class="wrapper">
-            <!-- Main/Desktop Navigation -->
-            <div class="mainNav">
-                <ul class="mainNavLinks">
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#skills">skills</a></li>
-                    <li><a href="#projects">projects</a></li>
-                    <li><a class="contactBtn" href="#contact" aria-label="go to contact section">get in touch</a></li>
-                </ul>
-            </div><!-- END .mainNav -->
-
-
-            <!-- TO DO: FIX DARK MODE TOGGLE -->
-            <!-- <div class="switchLight">
-                <input type="checkbox" class="checkbox" id="checkbox">
-            
-                <label for="checkbox" class="label">
-                    <i class="fas fa-moon"></i>  
-                    <i class="fas fa-sun"></i>
-                    <div class="ball"></div>               
-                </label> -->
-            <!-- </div> -->
-            <!-- END .switchLight -->
-        <!-- </div> -->
-         <!-- END .wrapper -->
-    <!-- </nav> -->
-    <!-- END .headerNav -->
-
-    
-    <!-- Hamburger Nav -->
-    <nav class="hamNavIcon">
-        <div class="toggle">
-            <i class="fa-solid fa-bars"></i>
-            <div class="sr-only">Mobile Navigation Toggle</div>
-        </div><!-- END .toggle -->
-    </nav><!-- END .hamNavIcon -->
-
-    <nav class="hamNav">
-        <ul class="hamNavLinks">
-            <li><a href="#about" class="hamLinks" aria-label="go to about me section">about</a></li>
-            <li><a href="#skills" class="hamLinks" aria-label="go to skills section">skills</a></li>
-            <li><a href="#projects" class="hamLinks" aria-label="go to projects section">projects</a></li>
-            <li><a href="#contact" class="hamLinks" aria-label="go to contact section">get in touch</a></li>
-        </ul>
-    </nav><!-- END .hamNav -->
-
+<body>
     <!-- Header Section -->
     <header id="header" class="header">
+        <div class="wrapper">
+            <!-- Main/Desktop Navigation -->
+            <nav class="navbar">
+                <ul class="navMenu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a class="contactBtn" href="#contact" aria-label="go to contact section">Contact</a></li>
+                </ul>         
+            </nav>
+
             <div class="textContainer">
-                <h1>ana vahcic</h1>
-                <h2 class="typeContainer">
-                    <span class="text firstText">front-end web developer &</span>
-                    <span class="text secondText"></span>
-                </h2>
+                <h1>Ana Vahcic</h1>
+                <h4>Front-End Web Developer</h4>
             </div><!-- END .textContainer -->
         </div> <!-- END .wrapper -->
     </header>
@@ -100,6 +60,7 @@
                 </div> <!-- END .aboutFlexContainer -->
             </div><!-- END .wrapper -->
         </section> <!-- END About Section -->
+
 
         <!-- Skills Section -->
         <section id="skills" class="skills">
@@ -123,6 +84,7 @@
                   </ul>
             </div><!-- END .wrapper -->
         </section><!-- END Skills Section -->
+
         
         <!-- Projects Section -->
         <section id="projects" class="projects">
@@ -216,6 +178,7 @@
             </div><!-- END .wrapper -->
         </section><!-- END Projects Section -->
 
+
         <!-- Contact Section -->
         <section id="contact" class="contact">
             <div class="wrapper">
@@ -238,7 +201,7 @@
                     </form>
 
                     <div class="contactTextContainer">
-                        <p>If you'd like to connect or have questions, send me a message. I always like to chat about coding, scuba diving, sharks or just anything.</p>
+                        <p>Curious about my work or just want to say hi? Send me a message. I always like to chat about coding, scuba diving, traveling or just anything. You can also connect with me on the social platforms down below.</p>
                         <ul class="contactInfo">
                             <li>
                                 <a href="https://www.linkedin.com/in/ana-vah%C4%8Di%C4%8D-36974842/" target="_blank">
@@ -264,7 +227,9 @@
                     </div><!-- END .contactTextContainer -->
                 </div><!-- END .contactFlexContainer -->
                 <div class="backToTop">
-                    <button onClick="topFunction()" id="myBtn" title="Go to top">top</button>
+                    <button onClick="topFunction()" id="myBtn" title="Go to top">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </button>
                 </div>
             </div><!-- END .wrapper -->
         </section><!-- END Contact Section -->
