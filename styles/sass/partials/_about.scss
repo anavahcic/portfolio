@@ -1,4 +1,4 @@
-@use "./variables" as var;
+@use "./variables" as *;
 
 // About section styles
 .aboutFlexContainer {
@@ -14,20 +14,11 @@
     img {
         border-radius: 50%;
         width: 100%;
+        border: 5px solid $darkGreen;
     }
 }
 .aboutMeBio {
     width: 60%;
     padding: 40px 50px;
     margin-left: 200px;
-    h2 {
-        margin-bottom: 10px;
-        margin-bottom: 40px;
-        font-size: 2.6rem;
-        font-family: var.$body;
-        text-decoration: underline var.$orange 5px;
-    }
-    p {
-        font-family: var.$body;
-    }
 }
