@@ -1,7 +1,8 @@
 @use "./variables" as *;
 
 // Media Queries Styles
-@media (max-width: 1100px) {
+
+@media (max-width: 1120px) {
     .aboutFlexContainer {
         flex-direction: column;
         align-items: center;
@@ -28,17 +29,41 @@
     h2 {
         text-align: center;
     }
+     // Projects section
+     .projectFlexContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .projectImgContainer,
+    .projectTextContainer {
+        width: 90%;
+    }
+    .contactFlexContainer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contactTextContainer {
+        margin: 0 auto;
+    }
+    .contact h2 {
+        margin-bottom: 100px;
+    }
+    .backToTop {
+        font-size: 0.8rem;
+    }
 }
 @media (max-width: 950px) {
     // Projects section
-    .projectsFlexContainer {
+    .projectFlexContainer {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 20px 0;
         width: fit-content;
     }
-    .projectsImgContainer {
+    .projectImgContainer {
         width: 70%;
     }
     .contactFlexContainer {
@@ -61,8 +86,8 @@
     .aboutMeBio {
         width: 90%;
     }
-    .projectsTextContainer,
-    .projectsImgContainer {
+    .projectTextContainer,
+    .projectImgContainer {
         width: 90%;
     }
     .contactFlexContainer {
@@ -86,13 +111,13 @@
    .skills ul li i {
     font-size: 50px;
     }
-   .projectsFlexContainer {
+   .projectFlexContainer {
     flex-direction: column;
     align-items: center;
-    .projectsImgContainer {
+    .projectImgContainer {
         width: 90%;
     }
-    .projectsTextContainer h3 {
+    .projectTextContainer h3 {
         font-size: 1.2rem;
     }
    }
@@ -111,7 +136,7 @@
 }
 
 @media (max-width: 600px) {
-    .projectsTextContainer {
+    .projectTextContainer {
     .skillsUsed {
         li {
             font-size: 0.6rem;
@@ -127,7 +152,7 @@
 }
 
 @media (max-width: 550px) {
-    .projectsTextContainer {
+    .projectTextContainer {
         p, a {
             font-size: 0.8rem;
         }
@@ -158,10 +183,10 @@
    .projects {
     padding: 10px;
    }
-   .projectsFlexContainer {
+   .projectFlexContainer {
     flex-direction: column;
     align-items: left;
-    .projectsImgContainer {
+    .projectImgContainer {
         width: 90%;
     }
    }
@@ -205,7 +230,7 @@
     .projects {
         padding: 10px;
     }
-    .projectsFlexContainer {
+    .projectFlexContainer {
         width: 100%;
     }
     .contactInfo {
@@ -244,9 +269,7 @@
             padding-top: 20px;
         }
     }
-    .contactTextContainer {
-
-    }
+   
     form {
         margin-top: 50px;
         margin-left: 0;

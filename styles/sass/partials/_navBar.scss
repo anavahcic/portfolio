@@ -9,8 +9,10 @@
         font-family: $headingFont;
         margin-top: 20px;
         padding-bottom: 20px;
-        &:hover {
+        &:hover,
+        &:focus {
             text-decoration: underline 5px $pink;
+            letter-spacing: 2px;
         }
     }
 
