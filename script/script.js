@@ -41,7 +41,7 @@ const textLoad = () => {
   }, 12000);
 
   setTimeout(() => {
-    text.textContent = "Freelancer";
+    text.textContent = "Traveler";
   }, 16000);
 
 }
