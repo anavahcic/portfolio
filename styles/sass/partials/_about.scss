@@ -14,11 +14,53 @@
     img {
         border-radius: 50%;
         width: 100%;
-        border: 5px solid $darkGreen;
+        border: 5px solid $black;
     }
 }
 .aboutMeBio {
     width: 60%;
     padding: 40px 50px;
     margin-left: 200px;
+    h2 {
+        margin-bottom: 50px;
+    }
+}
+
+
+.typeContainer {
+    .text {
+        position: relative;
+        overflow: hidden;
+        font-size: 1.6rem;
+       
+        
+    }
+    .secondText {
+        color: $pink;
+        font-weight: bolder;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: white;
+            border-left: $black;
+            animation: animate 3s steps(12) infinite;
+        }
+        ::after {
+            content: ".";
+        }
+    }
+}   
+
+
+@keyframes animate {
+    40%, 60% {
+        left: calc(100% + 10px);
+    }
+    100% {
+        left: 0%;
+    }
 }
