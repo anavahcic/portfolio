@@ -1,20 +1,41 @@
 @use "./variables" as *;
 
-.navMenu {
+nav {
     display: flex;
-    justify-content: space-evenly;
-    li {
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px white solid;
+    position: absolute;
+    z-index: 3;
+    width: 100vw;
+    padding: 0 40px;
+
+    ul {
+        list-style: none;
         color: $white;
-        text-transform: uppercase;
-        font-family: $headingFont;
-        margin-top: 20px;
-        padding-bottom: 20px;
-        &:hover,
-        &:focus {
-            text-decoration: underline 5px $pink;
-            letter-spacing: 2px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 50px;
+
+        a:link,
+        a:visited,
+        a:hover,
+        a:active { 
+         text-decoration: none; 
         }
     }
 
+}  
+
+.skipLink {
+    display: none;
 }
 
+.logo {
+    color: $white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+  
+    
+    

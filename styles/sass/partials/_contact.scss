@@ -2,13 +2,11 @@
 
 // / Contact section styles
 .contact {
-    background-color: $darkGreen;
     color: $white;
     padding: 100px 0;
     h2 {
         color: $white;
         text-align: center;
-        text-decoration: underline $pink 5px;
         margin-bottom: 150px;
         font-size: 2.6rem;
     }
@@ -58,7 +56,7 @@ textarea {
 
 .submitBtn {
     background-color: $pink;
-    font-family: $bodyFont;
+    font-family: $mainFont;
     text-align: center;
     margin-top: 20px;
     padding: 10px 20px;
@@ -92,7 +90,7 @@ form {
     border-radius: 10px;
     font-size: 30px;
     &:hover {
-        background-color: $lightPink;
+        background-color: $pink;
         color: $black;
     }
 }

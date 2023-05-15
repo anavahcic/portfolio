@@ -21,33 +21,33 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 } 
 
-const text = document.querySelector(".secondText");
+// const text = document.querySelector(".secondText");
 
-const textLoad = () => {
-  setTimeout(() => {
-    text.textContent = "Web Developer";
-  }, 0);
+// const textLoad = () => {
+//   setTimeout(() => {
+//     text.textContent = "Web Developer";
+//   }, 0);
 
-  setTimeout(() => {
-    text.textContent = "Scuba Diver";
-  }, 4000);
+//   setTimeout(() => {
+//     text.textContent = "Scuba Diver";
+//   }, 4000);
 
-  setTimeout(() => {
-    text.textContent = "Vegan";
-  }, 8000);
+//   setTimeout(() => {
+//     text.textContent = "Vegan";
+//   }, 8000);
 
-  setTimeout(() => {
-    text.textContent = "Learner";
-  }, 12000);
+//   setTimeout(() => {
+//     text.textContent = "Learner";
+//   }, 12000);
 
-  setTimeout(() => {
-    text.textContent = "Traveler";
-  }, 16000);
+//   setTimeout(() => {
+//     text.textContent = "Traveler";
+//   }, 16000);
 
-}
+// }
 
-textLoad();
-setInterval(textLoad, 20000);
+// textLoad();
+// setInterval(textLoad, 20000);
 
 
 

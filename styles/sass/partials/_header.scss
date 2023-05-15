@@ -2,49 +2,22 @@
 
 // Header section styles
 header {
-    background-image: url(../assets/pexels-igor-haritanovich-1687341.jpg);
-    background-size: cover;
+    background-color: $black;
     height: 100vh;
     position: relative;
     .textContainer {
         flex-basis: 100%;
         text-align: center;
-        margin-top: 20%;
-        bottom: 50%;
+        padding-top: 300px;
+    }
+    .meetAna {
+        background-color: $white;
+        color: $black;
+        border-radius: 5%;
+        font-family: $mainFont;
+        border: none;
+        margin-top: 50px;
     }
 
 }
 
-.typeContainer {
-    .text {
-      position: relative;
-      overflow: hidden;
-    }
-    .secondText {
-        &::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          height: 100%;
-          width: 100%;
-          background-color: $pink;
-          border-left: 2.5px solid $black;
-          animation: animate 3s steps(12) infinite;
-          overflow: hidden;
-      }
-      &::after {
-        content: "."
-      }
-    }
-
-    
-    @keyframes animate {
-      40%, 60% {
-        left: calc(100% + 10px);
-      }
-      100% {
-        left: 0%;
-      }
-    }
-  }

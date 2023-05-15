@@ -8,8 +8,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Roboto:wght@700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/323dbf2a01.js" crossorigin="anonymous"></script>
     <!-- Icon Import -->
@@ -24,22 +23,32 @@
 </head>
 
 <body>
+    <!-- Skip Link -->
+    <a href="#about" class="skipLink">Skip to Main Content</a>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h2 class="logo"><a href="#home">Ana Vahcic</a></h2>
+        <ul class="navMenu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact" aria-label="go to contact section">Contact</a></li>
+        </ul>  
+        
+        <!-- <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div> -->
+    </nav>
+    
     <!-- Header Section -->
     <header id="header" class="header">
         <div class="wrapper">
-            <!-- Main/Desktop Navigation -->
-            <nav class="navbar">
-                <ul class="navMenu">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a class="contactBtn" href="#contact" aria-label="go to contact section">Contact</a></li>
-                </ul>                   
-            </nav>
-
             <div class="textContainer">
-                <h1>Ana Vahcic</h1>
-                <h4>Front-End Web Developer</h4>
+                <h1>Web Developer</h1>
+                <button class="meetAna"><a href="#about">Meet Ana</a></button>
             </div><!-- END .textContainer -->
         </div> <!-- END .wrapper -->
     </header>
@@ -51,17 +60,17 @@
             <div class="wrapper">
                 <div class="aboutFlexContainer">
                     <div class="headshotImgContainer">
-                        <img src="./assets/anaVahcic.jpg" alt="portrait headshot of Ana Vahcic">
+                        <img src="./assets/headshotAna.jpg" alt="portrait headshot of Ana Vahcic">
                     </div><!-- END .imgHeadshotContainer -->
                     <div class="aboutMeBio">
-                        <h2>about me</h2>
+                        <h2>About me</h2>
 
                         <!-- Reference: https://www.youtube.com/watch?v=nxoHR9lltK0 -->
-                        <div class="typeContainer">
+                        <!-- <div class="typeContainer">
                             <span class="text firstText">I'm a</span><span class="sr-only"></span>
                             <span class="text secondText"></span>
-                        </div>
-                        <p>I love bringing people's ideas to life by building accessible, clean and responsive websites.<br></br>I have background in chemical engineering, and I'm also PADI scuba instructor 🤿 - I love introducing folks to underwater world 🦈🐠🐳🪸.<br></br>When not coding, you will find me trying out new plant-based dishes 🌱🥑🍎🍇, scuba diving, traveling 🌎 or hiking 🌲. Also, my goal in life is to find a dachshund and/or corgi to adopt 🐶🐕🐾.</p>
+                        </div> -->
+                        <p>I'm a web developer passionate about creating engaging online experiences. I bring ideas to life through accessible, clean, and responsive websites. Exploring nature and practicing a health-focused, plant-based lifestyle brings me joy. I value minimalism and collaborate with like-minded individuals who care about sustainability, healing, and making a positive impact.</p>
                     </div> <!-- END .aboutMeBio -->
                 </div> <!-- END .aboutFlexContainer -->
             </div><!-- END .wrapper -->
@@ -71,7 +80,7 @@
         <!-- Skills Section -->
         <section id="skills" class="skills">
             <div class="wrapper">
-                <h2>skills</h2>
+                <h2>Skills</h2>
                 <ul>
                     <li><i class="devicon-html5-plain"></i><br />HTML</li>
                     <li><i class="devicon-css3-plain"></i><br />CSS</li>
@@ -95,7 +104,7 @@
         <!-- Projects Section -->
         <section id="projects" class="projects">
             <div class="wrapper">
-                <h2>projects</h2>
+                <h2>Projects</h2>
                 <!-- Project One -->
 
                  <!-- Project Three -->
@@ -104,7 +113,7 @@
                         <img src="./assets/caraClothing.png" alt="laptop, iPad and iPhone screens with the image of cara clothing page">
                     </div><!-- END .projectsImgContainer -->
                     <div class="projectTextContainer">
-                        <h3>cara clothing</h3>
+                        <h3>Cara clothing</h3>
                         <ul class="skillsUsed">
                             <li>HTML |</li>
                             <li>SASS |</li>
@@ -124,7 +133,7 @@
                         <img src="./assets/triviaQuiz.png" alt="laptop, iPad and iPhone screens with the image of trivia quiz page"> 
                     </div><!-- END .projectsImgContainer -->
                     <div class="projectTextContainer">
-                        <h3>trivia quiz</h3>
+                        <h3>Trivia quiz</h3>
                         <ul class="skillsUsed">
                             <li>HTML |</li>
                             <li>CSS |</li>
@@ -147,7 +156,7 @@
                         <img src="./assets/boxOfficeBoffo.png" alt="laptop, iPad and iPhone screens with the image of box office boffo page">
                     </div><!-- END .projectsImgContainer -->
                     <div class="projectTextContainer">
-                        <h3>box office boffo</h3>
+                        <h3>Box office boffo</h3>
                         <ul class="skillsUsed">
                             <li>HTML |</li>
                             <li>CSS |</li>
@@ -169,7 +178,7 @@
                         <img src="./assets/theBoredApp.png" alt="laptop, iPad and iPhone screens with the image of the bored app page">
                     </div><!-- END .projectsImgContainer -->
                     <div class="projectTextContainer">
-                        <h3>bored app</h3>
+                        <h3>Bored app</h3>
                         <ul class="skillsUsed">
                             <li>HTML |</li>
                             <li>CSS |</li>
@@ -192,7 +201,7 @@
         <!-- Contact Section -->
         <section id="contact" class="contact">
             <div class="wrapper">
-                <h2>get in touch</h2>
+                <h2>Get in touch</h2>
                 <div class="contactFlexContainer">
                     <form 
                     id="myForm" name="message" method="POST" data-netlify="true" onSubmit="submit" data-netlify-honeypot="botField" 
@@ -226,11 +235,6 @@
                             <li>
                                 <a href="mailto:ana.vahcic@gmail.com" target="_blank">
                                     <i class="fa-solid fa-envelope fa-xl"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://calendly.com/app/availability/schedules" target="_blank">
-                                    <i class="fa-regular fa-calendar fa-xl"></i>
                                 </a>
                             </li>
                         </ul> 
