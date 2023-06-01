@@ -381,19 +381,24 @@ header .textContainer {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   text-align: center;
-  padding-top: 300px;
+  padding: 200px 30px 50px 30px;
+}
+header .title {
+  color: #f4f7f5;
+  padding-top: 50px;
 }
 header .meetAna {
-  background-color: #f4f7f5;
-  color: #222823;
-  border-radius: 5%;
+  border-radius: 5px;
   font-family: "Finger Paint", cursive;
-  border: none;
   margin-top: 50px;
+}
+header .meetAna:hover {
+  color: #222823;
 }
 
 .about {
   background-color: #f4f7f5;
+  padding: 100px 0px;
 }
 
 .aboutFlexContainer {
@@ -426,7 +431,7 @@ header .meetAna {
 
 .skills {
   background-color: #222823;
-  padding: 100px;
+  padding: 150px 0px;
 }
 .skills h2 {
   text-align: center;
