@@ -107,6 +107,42 @@
 }
 
 @media (max-width: 650px) {
+    .hamburger {
+        display: block;
+
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navMenu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: $black;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .navItem {
+        margin: 16px 0;
+    }
+
+    .navMenu.active {
+        left: 0;
+    }
    
    .skills ul li i {
     font-size: 50px;
@@ -244,30 +280,63 @@
 
 @media (max-width: 375px) {
     header {
-        height: 80vh;
+        height: 100vh;
     }
     .textContainer {
         h1 {
-        font-size: 3rem;
+        font-size: 2.8rem;
         line-height: 3.5rem;
-        margin-bottom: 80px;
         }
         h2 {
-        font-size: 2rem;
+        font-size: 1.2rem;
         line-height: 3rem;
         }
     }
+    .about {
+        padding: 0px;
+    }
+    .aboutMeBio {
+        h2 {
+            font-size: 2rem;
+        }
+    }
     .skills {
+        padding: 100px 0px;
         li {
             margin: 0 auto;
         }
     }
-    .contact {
-        padding: 0;
-        h2 {
-            margin: 0;
-            padding-top: 20px;
+    .projects {
+        padding: 100px 0px;
+    }
+    .projectTextContainer {
+        h3 {
+            margin-top: 5px;
         }
+    }
+
+    .contact {
+        padding: 100px 0 0 0;
+        h2 {
+            margin-bottom: 30px;
+            line-height: 3rem;
+        }
+    }
+    .contactFlexContainer {
+        padding: 0px;
+    }
+    .contactTextContainer {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contactInfo {
+        padding: 50px;
+        margin: 0 auto;
+    }
+
+    .submitBtn {
+        margin: 10px 0px;
     }
    
     form {

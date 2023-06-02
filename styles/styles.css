@@ -319,6 +319,7 @@ button {
   font-weight: bold;
   line-height: 1.2rem;
   text-align: center;
+  text-transform: uppercase;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -370,6 +371,26 @@ nav ul a:active {
   color: #f4f7f5;
   text-transform: uppercase;
   font-size: 1.5rem;
+}
+
+.navLink {
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #f4f7f5;
 }
 
 header {
@@ -531,6 +552,7 @@ header .meetAna:hover {
   padding: 10px;
   margin-left: 0;
   border-radius: 5px;
+  text-transform: uppercase;
   cursor: pointer;
 }
 .projectTextContainer .projectsLinks li:hover {
@@ -641,6 +663,7 @@ form {
   padding: 10px;
   border-radius: 10px;
   font-size: 30px;
+  text-transform: uppercase;
 }
 #myBtn:hover {
   background-color: #DB9999;
@@ -791,6 +814,41 @@ footer p {
   }
 }
 @media (max-width: 650px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
+  }
+  .navMenu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #222823;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .navItem {
+    margin: 16px 0;
+  }
+  .navMenu.active {
+    left: 0;
+  }
   .skills ul li i {
     font-size: 50px;
   }
@@ -930,26 +988,54 @@ footer p {
 }
 @media (max-width: 375px) {
   header {
-    height: 80vh;
+    height: 100vh;
   }
   .textContainer h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     line-height: 3.5rem;
-    margin-bottom: 80px;
   }
   .textContainer h2 {
-    font-size: 2rem;
+    font-size: 1.2rem;
     line-height: 3rem;
+  }
+  .about {
+    padding: 0px;
+  }
+  .aboutMeBio h2 {
+    font-size: 2rem;
+  }
+  .skills {
+    padding: 100px 0px;
   }
   .skills li {
     margin: 0 auto;
   }
+  .projects {
+    padding: 100px 0px;
+  }
+  .projectTextContainer h3 {
+    margin-top: 5px;
+  }
   .contact {
-    padding: 0;
+    padding: 100px 0 0 0;
   }
   .contact h2 {
-    margin: 0;
-    padding-top: 20px;
+    margin-bottom: 30px;
+    line-height: 3rem;
+  }
+  .contactFlexContainer {
+    padding: 0px;
+  }
+  .contactTextContainer {
+    width: 100%;
+    text-align: center;
+  }
+  .contactInfo {
+    padding: 50px;
+    margin: 0 auto;
+  }
+  .submitBtn {
+    margin: 10px 0px;
   }
   form {
     margin-top: 50px;
