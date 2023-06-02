@@ -3,10 +3,10 @@
 // Projects section styles
 .projects {
     padding: 100px;
+    background-color: $white;
     h2 {
         font-size: 2.6rem;
         text-align: center;
-        text-decoration: underline $pink 5px;
     }
 }
 .projectFlexContainer {
@@ -30,7 +30,7 @@
     }
     .skillsUsed {
         li {
-            color: $darkGreen;
+            color: $white;
             font-size: 0.8rem;
             margin: 0px 5px 0px 0px;
         }
@@ -43,6 +43,7 @@
             padding: 10px;
             margin-left: 0;
             border-radius: 5px;
+            text-transform: uppercase;
             cursor: pointer;
             &:hover {
                 background-color: $white;

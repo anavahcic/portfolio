@@ -1,20 +1,23 @@
 @use "./variables" as *;
 
 // About section styles
+.about {
+    background-color: $white;
+    padding: 100px 0px;
+}
 .aboutFlexContainer {
     display: flex;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 .headshotImgContainer {
-    width: 50%;
-    max-width: 230px;
+    width: 80%;
+    max-width: 400px;
     padding-top: 40px;
     margin-left: 100px;
     img {
-        border-radius: 50%;
+        border-radius: 5%;
         width: 100%;
-        border: 5px solid $black;
     }
 }
 .aboutMeBio {
@@ -27,40 +30,3 @@
 }
 
 
-.typeContainer {
-    .text {
-        position: relative;
-        overflow: hidden;
-        font-size: 1.6rem;
-       
-        
-    }
-    .secondText {
-        color: $pink;
-        font-weight: bolder;
-        &::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background-color: white;
-            border-left: $black;
-            animation: animate 3s steps(12) infinite;
-        }
-        ::after {
-            content: ".";
-        }
-    }
-}   
-
-
-@keyframes animate {
-    40%, 60% {
-        left: calc(100% + 10px);
-    }
-    100% {
-        left: 0%;
-    }
-}

@@ -1,5 +1,30 @@
-// Scroll up button
+// Hamburger menu
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".navMenu");
 
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".navLink").forEach(n => n.addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}))
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Scroll up button
 // Reference: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 // Get the button:
 const mybutton = document.getElementById("myBtn");
@@ -21,33 +46,8 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 } 
 
-const text = document.querySelector(".secondText");
 
-const textLoad = () => {
-  setTimeout(() => {
-    text.textContent = "Web Developer";
-  }, 0);
 
-  setTimeout(() => {
-    text.textContent = "Scuba Diver";
-  }, 4000);
-
-  setTimeout(() => {
-    text.textContent = "Vegan";
-  }, 8000);
-
-  setTimeout(() => {
-    text.textContent = "Learner";
-  }, 12000);
-
-  setTimeout(() => {
-    text.textContent = "Traveler";
-  }, 16000);
-
-}
-
-textLoad();
-setInterval(textLoad, 20000);
 
 
 
