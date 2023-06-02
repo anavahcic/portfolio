@@ -1,6 +1,6 @@
 This favicon was generated using the following font:
 
-- Font Title: Roboto
-- Font Author: Copyright 2011 Google Inc. All Rights Reserved.
-- Font Source: http://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Me5WZLCzYlKw.ttf
-- Font License: Apache License, version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html))
+- Font Title: Finger Paint
+- Font Author: Copyright (c) 2011 by Ralph du Carrois, with Reserved Font Name 'Finger Paint'
+- Font Source: http://fonts.gstatic.com/s/fingerpaint/v15/0QInMXVJ-o-oRn_7dron8YWO85bS8ANesw.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
